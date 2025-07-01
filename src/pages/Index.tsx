@@ -51,26 +51,26 @@ const Index = () => {
   return (
     <>
       <CustomCursor />
-      <div className="min-h-screen bg-squid-black text-squid-white">
+      <div className="min-h-screen bg-squid-black text-squid-white w-full overflow-x-hidden">
         <Navigation currentSection={currentSection} />
         
-        <section id="home">
+        <section id="home" className="w-full">
           <HeroSection />
         </section>
         
-        <section id="about">
+        <section id="about" className="w-full">
           <AboutSection />
         </section>
         
-        <section id="skills">
+        <section id="skills" className="w-full">
           <SkillsSection />
         </section>
         
-        <section id="projects">
+        <section id="projects" className="w-full">
           <ProjectsSection />
         </section>
         
-        <section id="contact">
+        <section id="contact" className="w-full">
           <ContactSection />
         </section>
       </div>

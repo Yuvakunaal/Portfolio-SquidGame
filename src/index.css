@@ -42,9 +42,17 @@
     @apply border-border;
   }
 
-  body {
+  html, body {
     @apply bg-squid-black text-squid-white font-rajdhani;
     cursor: none;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #root {
+    width: 100%;
     overflow-x: hidden;
   }
 
@@ -116,7 +124,7 @@
 
 @layer components {
   .btn-game {
-    @apply px-6 py-3 bg-transparent border-2 border-squid-red text-squid-red font-orbitron font-bold uppercase tracking-wider transition-all duration-300 hover:bg-squid-red hover:text-squid-black hover:shadow-lg;
+    @apply px-4 sm:px-6 py-2 sm:py-3 bg-transparent border-2 border-squid-red text-squid-red font-orbitron font-bold uppercase tracking-wider transition-all duration-300 hover:bg-squid-red hover:text-squid-black hover:shadow-lg text-sm sm:text-base;
     box-shadow: 0 0 20px rgba(255, 0, 64, 0.3);
   }
 
@@ -126,7 +134,7 @@
   }
 
   .skill-tile {
-    @apply glass p-6 rounded-lg transition-all duration-300 hover:scale-105 cursor-pointer;
+    @apply glass p-4 sm:p-6 rounded-lg transition-all duration-300 hover:scale-105 cursor-pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -174,4 +182,39 @@
   body {
     cursor: auto;
   }
+
+  /* Ensure all containers are full width on mobile */
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Mobile text sizing */
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Mobile spacing */
+  .section-padding {
+    padding: 3rem 1rem;
+  }
+}
+
+/* Ensure no horizontal scroll */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
