@@ -25,7 +25,7 @@ const ContactSection = () => {
 
     // Simulate form submission
     setTimeout(() => {
-      toast.success('Message sent! Welcome to the game!', {
+      toast.success('Message sent! Welcome to the recruitment process!', {
         style: {
           background: '#ff0040',
           color: '#ffffff',
@@ -42,11 +42,11 @@ const ContactSection = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-orbitron font-black neon-text mb-4">
-            FINAL ELIMINATION
+            RECRUITMENT PHASE
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-squid-red to-squid-pink mx-auto mb-6"></div>
           <p className="text-xl font-rajdhani text-squid-cyan">
-            Ready to recruit Player 456? Send your invitation below.
+            Ready to recruit Yuva Kunaal for Data Analysis & Full-Stack roles?
           </p>
         </div>
 
@@ -55,7 +55,7 @@ const ContactSection = () => {
           <div className="space-y-8">
             <div className="glass-red p-6 rounded-lg">
               <h3 className="text-2xl font-orbitron font-bold text-squid-red mb-6">
-                RECRUITMENT DETAILS
+                PLAYER COORDINATES
               </h3>
               
               <div className="space-y-4">
@@ -65,7 +65,17 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <div className="font-rajdhani font-semibold text-squid-cyan">Email</div>
-                    <div className="font-rajdhani text-gray-300">player456@developer-games.com</div>
+                    <div className="font-rajdhani text-gray-300">bhavikunaal@gmail.com</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center space-x-4 cursor-hover">
+                  <div className="w-12 h-12 bg-squid-red/20 rounded-full flex items-center justify-center">
+                    <span className="text-squid-red text-xl">📱</span>
+                  </div>
+                  <div>
+                    <div className="font-rajdhani font-semibold text-squid-cyan">Phone</div>
+                    <div className="font-rajdhani text-gray-300">+91 8897160549</div>
                   </div>
                 </div>
                 
@@ -75,7 +85,9 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <div className="font-rajdhani font-semibold text-squid-cyan">LinkedIn</div>
-                    <div className="font-rajdhani text-gray-300">/in/player-456-dev</div>
+                    <a href="https://www.linkedin.com/in/yuva-kunaal-127817290/" target="_blank" rel="noopener noreferrer" className="font-rajdhani text-gray-300 hover:text-squid-cyan transition-colors">
+                      /in/yuva-kunaal-127817290/
+                    </a>
                   </div>
                 </div>
                 
@@ -85,52 +97,87 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <div className="font-rajdhani font-semibold text-squid-cyan">GitHub</div>
-                    <div className="font-rajdhani text-gray-300">github.com/player456</div>
+                    <a href="https://github.com/Yuvakunaal" target="_blank" rel="noopener noreferrer" className="font-rajdhani text-gray-300 hover:text-squid-cyan transition-colors">
+                      github.com/Yuvakunaal
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4 cursor-hover">
+                  <div className="w-12 h-12 bg-squid-red/20 rounded-full flex items-center justify-center">
+                    <span className="text-squid-red text-xl">🌐</span>
+                  </div>
+                  <div>
+                    <div className="font-rajdhani font-semibold text-squid-cyan">Portfolio</div>
+                    <a href="https://kunaal-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer" className="font-rajdhani text-gray-300 hover:text-squid-cyan transition-colors">
+                      kunaal-portfolio.netlify.app
+                    </a>
                   </div>
                 </div>
                 
                 <div className="flex items-center space-x-4 cursor-hover">
                   <div className="w-12 h-12 bg-squid-red/20 rounded-full flex items-center justify-center">
-                    <span className="text-squid-red text-xl">🎯</span>
+                    <span className="text-squid-red text-xl">📍</span>
                   </div>
                   <div>
-                    <div className="font-rajdhani font-semibold text-squid-cyan">Status</div>
-                    <div className="font-rajdhani text-gray-300">Available for Immediate Deployment</div>
+                    <div className="font-rajdhani font-semibold text-squid-cyan">Location</div>
+                    <div className="font-rajdhani text-gray-300">Hyderabad, Telangana</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Game Rules */}
+            {/* Achievements */}
             <div className="glass p-6 rounded-lg">
               <h4 className="text-lg font-orbitron font-bold text-squid-cyan mb-4">
-                RECRUITMENT RULES
+                CERTIFICATIONS & ACHIEVEMENTS
               </h4>
               <ul className="space-y-2 font-rajdhani text-sm text-gray-300">
                 <li className="flex items-center">
-                  <span className="text-squid-red mr-2">•</span>
-                  Response guaranteed within 24 hours
+                  <span className="text-squid-red mr-2">🏆</span>
+                  HackerRank Software Engineer Intern Certification
                 </li>
                 <li className="flex items-center">
-                  <span className="text-squid-red mr-2">•</span>
-                  Available for full-time opportunities
+                  <span className="text-squid-red mr-2">🐍</span>
+                  NPTEL "Joy of Computing using Python" Certification
                 </li>
                 <li className="flex items-center">
-                  <span className="text-squid-red mr-2">•</span>
-                  Open to remote or hybrid work
+                  <span className="text-squid-red mr-2">👥</span>
+                  Led 20 volunteers for DIGITHON event
                 </li>
                 <li className="flex items-center">
-                  <span className="text-squid-red mr-2">•</span>
-                  Ready to start immediately
+                  <span className="text-squid-red mr-2">🚀</span>
+                  Internal Smart India Hackathon Certificate
+                </li>
+                <li className="flex items-center">
+                  <span className="text-squid-red mr-2">📚</span>
+                  Python Foundation Certification (Infosys)
                 </li>
               </ul>
+            </div>
+
+            {/* Target Roles */}
+            <div className="glass p-6 rounded-lg">
+              <h4 className="text-lg font-orbitron font-bold text-squid-cyan mb-4">
+                TARGET ROLES
+              </h4>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-squid-red/20 p-3 rounded text-center">
+                  <div className="font-orbitron font-bold text-squid-red text-sm">DATA ANALYST</div>
+                  <div className="font-rajdhani text-xs text-gray-300 mt-1">Primary Interest</div>
+                </div>
+                <div className="bg-squid-red/20 p-3 rounded text-center">
+                  <div className="font-orbitron font-bold text-squid-red text-sm">FULL-STACK DEV</div>
+                  <div className="font-rajdhani text-xs text-gray-300 mt-1">MERN Specialist</div>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Contact Form */}
           <div className="glass-red p-8 rounded-lg">
             <h3 className="text-2xl font-orbitron font-bold text-squid-red mb-6">
-              SEND INVITATION
+              SEND RECRUITMENT MESSAGE
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -180,7 +227,7 @@ const ContactSection = () => {
               
               <div>
                 <label className="block font-rajdhani font-semibold text-squid-cyan mb-2">
-                  MISSION BRIEFING *
+                  JOB OPPORTUNITY DETAILS *
                 </label>
                 <textarea
                   name="message"
@@ -188,7 +235,7 @@ const ContactSection = () => {
                   onChange={handleInputChange}
                   rows={4}
                   className="w-full px-4 py-3 bg-squid-black/50 border border-squid-red/30 rounded font-rajdhani text-squid-white focus:border-squid-red focus:ring-1 focus:ring-squid-red transition-all duration-300 cursor-hover resize-none"
-                  placeholder="Describe the challenge you want me to tackle..."
+                  placeholder="Describe the role, requirements, and what makes this opportunity exciting..."
                   required
                 />
               </div>
@@ -198,7 +245,7 @@ const ContactSection = () => {
                 disabled={isSubmitting}
                 className="w-full btn-game py-4 cursor-hover disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? 'SENDING INVITATION...' : 'RECRUIT PLAYER 456'}
+                {isSubmitting ? 'SENDING RECRUITMENT OFFER...' : 'RECRUIT YUVA KUNAAL'}
               </button>
             </form>
           </div>
@@ -207,10 +254,10 @@ const ContactSection = () => {
         {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-squid-red/30">
           <p className="font-rajdhani text-gray-400 text-sm">
-            © 2024 Player 456. All rights reserved. | Built with React & Tailwind CSS
+            © 2024 Boggavarapu Yuva Satya Kunaal. All rights reserved. | Built with React & Tailwind CSS
           </p>
           <p className="font-rajdhani text-squid-red text-xs mt-2">
-            "In the game of development, you either code or you get eliminated."
+            "In the game of development, data drives decisions and code conquers challenges."
           </p>
         </div>
       </div>

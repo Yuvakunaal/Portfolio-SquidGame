@@ -7,50 +7,54 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "E-COMMERCE SURVIVAL",
-      challenge: "Build a complete online marketplace",
+      title: "VIRTUAL EVENT PLATFORM",
+      challenge: "Build a scalable event management system",
       status: "COMPLETED",
       difficulty: "EXTREME",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      description: "A full-stack e-commerce platform with user authentication, payment processing, and admin dashboard. Survived all edge cases and deployment challenges.",
-      features: ["User Authentication", "Payment Integration", "Admin Dashboard", "Real-time Inventory"],
-      github: "#",
+      technologies: ["HTML", "CSS", "JavaScript", "Express.js", "Node.js", "MongoDB"],
+      description: "Full-stack platform enabling 500+ users to create, manage, and participate in events. Implemented role-based functionality with intuitive navigation and scalable backend architecture.",
+      features: ["Role-based Access Control", "Event Creation & Management", "User Registration System", "Scalable Backend Architecture"],
+      metrics: "40% faster event management, 25% reduced server load",
+      github: "https://github.com/Yuvakunaal",
       live: "#"
     },
     {
       id: 2,
-      title: "SOCIAL MEDIA ELIMINATION",
-      challenge: "Create a viral social platform",
+      title: "YT-INSTA VIDEO DOWNLOADER",
+      challenge: "Create multi-platform video downloading solution",
       status: "COMPLETED",
       difficulty: "HARD",
-      technologies: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
-      description: "Real-time social media application with live chat, post sharing, and notification system. Only the most engaging features survived the user testing.",
-      features: ["Real-time Chat", "Media Sharing", "Push Notifications", "User Profiles"],
-      github: "#",
+      technologies: ["Python", "Streamlit", "yt-dlp", "instaloader"],
+      description: "User-friendly web application enabling seamless video downloads from YouTube and Instagram. Built with Python and Streamlit for optimal user experience.",
+      features: ["Multi-platform Support", "Streamlit Web Interface", "Download Optimization", "User-friendly Design"],
+      metrics: "50% faster downloads, 200+ active users, 15% retention increase",
+      github: "https://github.com/Yuvakunaal",
       live: "#"
     },
     {
       id: 3,
-      title: "AI CHATBOT BATTLE",
-      challenge: "Develop an intelligent assistant",
-      status: "IN PROGRESS",
-      difficulty: "NIGHTMARE",
-      technologies: ["Python", "TensorFlow", "FastAPI", "React"],
-      description: "Advanced AI chatbot with natural language processing and machine learning capabilities. Currently surviving the training phase.",
-      features: ["NLP Processing", "Context Memory", "API Integration", "Learning Algorithm"],
-      github: "#",
+      title: "HOTEL BOOKING ANALYSIS",
+      challenge: "Extract insights from booking data patterns",
+      status: "COMPLETED",
+      difficulty: "EXTREME",
+      technologies: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn"],
+      description: "Comprehensive data analysis on 10,000+ hotel bookings, uncovering critical business insights including peak booking patterns and cancellation trends.",
+      features: ["Statistical Analysis", "Data Visualization", "Trend Identification", "Business Intelligence"],
+      metrics: "Analyzed 10,000+ records, identified key patterns for optimization",
+      github: "https://github.com/Yuvakunaal",
       live: "#"
     },
     {
       id: 4,
-      title: "BLOCKCHAIN PROTOCOL",
-      challenge: "Build a decentralized application",
+      title: "BYTEXL INTERNSHIP PROJECTS",
+      challenge: "Develop multiple Flask applications",
       status: "COMPLETED",
-      difficulty: "EXTREME",
-      technologies: ["Solidity", "Web3.js", "React", "Ethereum"],
-      description: "Decentralized voting system built on blockchain technology. Survived gas optimization and smart contract auditing challenges.",
-      features: ["Smart Contracts", "Wallet Integration", "Gas Optimization", "Security Audit"],
-      github: "#",
+      difficulty: "HARD",
+      technologies: ["Python", "Flask", "HTML", "CSS", "JavaScript", "Bootstrap"],
+      description: "Created 3+ web applications during technical skilling internship, improving deployment efficiency and serving 100+ users with responsive interfaces.",
+      features: ["Flask Web Apps", "Responsive Design", "User Interface Optimization", "Deployment Automation"],
+      metrics: "20% improved deployment efficiency, 100+ users served",
+      github: "https://github.com/Yuvakunaal",
       live: "#"
     }
   ];
@@ -79,11 +83,11 @@ const ProjectsSection = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-orbitron font-black neon-text mb-4">
-            GAME CHALLENGES
+            BATTLE VICTORIES
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-squid-red to-squid-pink mx-auto mb-6"></div>
           <p className="text-xl font-rajdhani text-squid-cyan">
-            Each project is a deadly game - only the strongest code survives
+            Each project conquered through code, data, and determination
           </p>
         </div>
 
@@ -132,13 +136,20 @@ const ProjectsSection = () => {
                 {project.description}
               </p>
 
+              {/* Metrics */}
+              <div className="bg-squid-red/10 px-3 py-2 rounded mb-4">
+                <p className="text-xs font-rajdhani text-squid-cyan font-semibold">
+                  IMPACT: {project.metrics}
+                </p>
+              </div>
+
               {/* Expandable Details */}
               <div className={`transition-all duration-500 overflow-hidden ${
                 selectedProject === project.id ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
               }`}>
                 <div className="border-t border-squid-red/30 pt-4 mt-4">
                   <h4 className="font-orbitron font-bold text-squid-cyan text-sm mb-3">
-                    SURVIVAL FEATURES:
+                    KEY FEATURES:
                   </h4>
                   <div className="grid grid-cols-2 gap-2 mb-4">
                     {project.features.map((feature, featureIndex) => (
@@ -152,6 +163,8 @@ const ProjectsSection = () => {
                   <div className="flex gap-4">
                     <a
                       href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex-1 text-center py-2 bg-transparent border border-squid-red text-squid-red text-xs font-rajdhani font-bold uppercase tracking-wider transition-all duration-300 hover:bg-squid-red hover:text-squid-black cursor-hover"
                     >
                       VIEW CODE
@@ -176,6 +189,37 @@ const ProjectsSection = () => {
           ))}
         </div>
 
+        {/* Experience Section */}
+        <div className="mt-20">
+          <h3 className="text-3xl font-orbitron font-bold text-squid-cyan mb-8 text-center">
+            BATTLEFIELD EXPERIENCE
+          </h3>
+          <div className="glass-red p-8 rounded-lg max-w-4xl mx-auto">
+            <div className="mb-6">
+              <h4 className="text-xl font-orbitron font-bold text-squid-red mb-2">
+                BYTEXL - TECHNICAL SKILLING INTERNSHIP
+              </h4>
+              <p className="font-rajdhani text-squid-cyan mb-2">
+                Intern | June 2024 – July 2024 | Hyderabad, Telangana
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-4 text-sm font-rajdhani text-gray-300">
+              <div className="bg-squid-black/30 p-4 rounded">
+                <span className="text-squid-red font-semibold">ACHIEVEMENT 1:</span><br/>
+                Developed 3+ web applications using Flask, improving deployment efficiency by 20%
+              </div>
+              <div className="bg-squid-black/30 p-4 rounded">
+                <span className="text-squid-red font-semibold">ACHIEVEMENT 2:</span><br/>
+                Created responsive interfaces for 100+ users using HTML, CSS, JavaScript, Bootstrap
+              </div>
+              <div className="bg-squid-black/30 p-4 rounded">
+                <span className="text-squid-red font-semibold">ACHIEVEMENT 3:</span><br/>
+                Enhanced problem-solving skills by mastering Python Data Structures and Algorithms
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Call to Action */}
         <div className="text-center mt-16">
           <div className="glass-red p-8 rounded-lg max-w-2xl mx-auto">
@@ -183,14 +227,14 @@ const ProjectsSection = () => {
               READY FOR THE NEXT CHALLENGE?
             </h3>
             <p className="font-rajdhani text-gray-300 mb-6">
-              These projects represent just the beginning. I'm ready to take on new challenges 
-              and prove my worth in your development arena.
+              These victories represent my journey through data analysis and full-stack development. 
+              I'm ready to bring my skills to your organization's most challenging projects.
             </p>
             <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="btn-game cursor-hover"
             >
-              RECRUIT ME FOR YOUR TEAM
+              RECRUIT FOR DATA & DEVELOPMENT ROLES
             </button>
           </div>
         </div>

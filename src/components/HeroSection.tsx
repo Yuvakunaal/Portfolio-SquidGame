@@ -29,14 +29,14 @@ const HeroSection = () => {
         </h1>
         
         <h2 className="text-2xl md:text-4xl font-rajdhani font-light mb-8 text-squid-cyan animate-fade-in" style={{ animationDelay: '1s' }}>
-          TO THE <span className="neon-text-cyan font-semibold">DEVELOPER GAMES</span>
+          TO THE <span className="neon-text-cyan font-semibold">DATA & CODE ARENA</span>
         </h2>
 
         <div className="max-w-2xl mx-auto mb-12 animate-fade-in" style={{ animationDelay: '1.5s' }}>
           <p className="text-lg font-rajdhani text-gray-300 leading-relaxed">
-            I am <span className="text-squid-red font-semibold">Player 456</span>, a final-year B.Tech student 
-            ready to compete in the ultimate coding challenge. Every project is a game, 
-            every bug is an elimination, and only the strongest code survives.
+            I am <span className="text-squid-red font-semibold">Yuva Kunaal</span>, a final-year AI & Data Science student 
+            from CBIT with a 9.01 CGPA. Armed with Python mastery, MERN stack expertise, and data analysis skills, 
+            I'm ready to conquer the ultimate challenges in <span className="text-squid-cyan font-semibold">Data Analysis and Full-Stack Development</span>.
           </p>
         </div>
 
@@ -45,19 +45,19 @@ const HeroSection = () => {
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             className="btn-game cursor-hover"
           >
-            VIEW CHALLENGES
+            VIEW BATTLE VICTORIES
           </button>
           <button 
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="btn-game cursor-hover"
           >
-            RECRUIT ME
+            RECRUIT FOR DATA ROLES
           </button>
         </div>
 
         <div className="mt-16 animate-fade-in" style={{ animationDelay: '2.5s' }}>
           <div className="text-sm text-gray-500 font-rajdhani">
-            Scroll down to explore my abilities
+            Scroll down to explore my technical arsenal
           </div>
           <div className="w-6 h-10 mx-auto mt-4 border-2 border-squid-red rounded-full flex justify-center">
             <div className="w-1 h-3 bg-squid-red rounded-full mt-2 animate-bounce"></div>

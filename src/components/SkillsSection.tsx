@@ -6,30 +6,39 @@ const SkillsSection = () => {
 
   const skills = [
     {
-      category: "FRONTEND WEAPONS",
+      category: "PROGRAMMING ARSENAL",
       items: [
-        { name: "React", level: 90, description: "Component-based survival strategy" },
-        { name: "TypeScript", level: 85, description: "Type-safe code construction" },
-        { name: "Next.js", level: 80, description: "Full-stack framework mastery" },
-        { name: "Tailwind CSS", level: 95, description: "Rapid UI development" }
+        { name: "Python", level: 95, description: "5★ HackerRank certified, DSA master" },
+        { name: "Java", level: 80, description: "Object-oriented programming expertise" },
+        { name: "SQL", level: 98, description: "Database query supremacy" },
+        { name: "JavaScript", level: 85, description: "Full-stack web development" }
       ]
     },
     {
-      category: "BACKEND ARSENAL",
+      category: "FULL-STACK WEAPONS",
       items: [
-        { name: "Node.js", level: 85, description: "Server-side domination" },
-        { name: "Python", level: 80, description: "Versatile problem solving" },
-        { name: "Express.js", level: 85, description: "API construction expertise" },
-        { name: "MongoDB", level: 75, description: "NoSQL data management" }
+        { name: "MERN Stack", level: 90, description: "MongoDB, Express, React, Node.js" },
+        { name: "Flask", level: 85, description: "Python web framework & REST APIs" },
+        { name: "HTML/CSS", level: 88, description: "Responsive UI/UX design" },
+        { name: "Bootstrap", level: 75, description: "Frontend framework mastery" }
       ]
     },
     {
-      category: "TACTICAL TOOLS",
+      category: "DATA SCIENCE TOOLKIT",
       items: [
-        { name: "Git", level: 90, description: "Version control mastery" },
-        { name: "Docker", level: 70, description: "Containerization skills" },
-        { name: "AWS", level: 65, description: "Cloud deployment tactics" },
-        { name: "Linux", level: 80, description: "System administration" }
+        { name: "Pandas", level: 90, description: "Data manipulation and analysis" },
+        { name: "NumPy", level: 85, description: "Numerical computing power" },
+        { name: "Matplotlib", level: 80, description: "Data visualization expert" },
+        { name: "Excel", level: 85, description: "Advanced data analysis tool" }
+      ]
+    },
+    {
+      category: "DEVELOPMENT TOOLS",
+      items: [
+        { name: "Git/GitHub", level: 85, description: "Version control mastery" },
+        { name: "VS Code", level: 90, description: "IDE optimization expert" },
+        { name: "Microsoft Office", level: 80, description: "Professional productivity suite" },
+        { name: "Streamlit", level: 75, description: "Python web app deployment" }
       ]
     }
   ];
@@ -39,11 +48,11 @@ const SkillsSection = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-orbitron font-black neon-text mb-4">
-            PLAYER ABILITIES
+            TECHNICAL ARSENAL
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-squid-red to-squid-pink mx-auto mb-6"></div>
           <p className="text-xl font-rajdhani text-squid-cyan">
-            Each skill is a weapon in the developer games
+            Each skill is a weapon forged through countless battles with code
           </p>
         </div>
 
@@ -112,37 +121,37 @@ const SkillsSection = () => {
         {/* Special Abilities Section */}
         <div className="mt-20 text-center">
           <h3 className="text-3xl font-orbitron font-bold text-squid-cyan mb-8">
-            SPECIAL ABILITIES
+            COMPETITIVE ACHIEVEMENTS
           </h3>
           
           <div className="grid md:grid-cols-3 gap-6">
             <div className="glass-red p-6 rounded-lg cursor-hover">
-              <div className="text-4xl mb-4">🧠</div>
+              <div className="text-4xl mb-4">🏆</div>
               <h4 className="text-xl font-rajdhani font-bold text-squid-red mb-2">
-                PROBLEM SOLVING
+                HACKERRANK MASTER
               </h4>
               <p className="text-sm font-rajdhani text-gray-300">
-                Analytical thinking under pressure
+                Python 5★ | Problem Solving 3★
               </p>
             </div>
             
             <div className="glass-red p-6 rounded-lg cursor-hover">
               <div className="text-4xl mb-4">⚡</div>
               <h4 className="text-xl font-rajdhani font-bold text-squid-red mb-2">
-                RAPID LEARNING
+                LEETCODE WARRIOR
               </h4>
               <p className="text-sm font-rajdhani text-gray-300">
-                Quick adaptation to new technologies
+                200+ Problems Solved (Top 10%)
               </p>
             </div>
             
             <div className="glass-red p-6 rounded-lg cursor-hover">
               <div className="text-4xl mb-4">🎯</div>
               <h4 className="text-xl font-rajdhani font-bold text-squid-red mb-2">
-                EXECUTION
+                CODECHEF CHAMPION
               </h4>
               <p className="text-sm font-rajdhani text-gray-300">
-                Delivering results on time, every time
+                3★ Rated Coder (College Highest)
               </p>
             </div>
           </div>
