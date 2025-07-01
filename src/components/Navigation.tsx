@@ -30,7 +30,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection }) => {
           <div className="flex items-center justify-between w-full">
             {/* Logo */}
             <div className="text-xl sm:text-2xl font-orbitron font-black neon-text cursor-hover">
-              PLAYER 456
+              PLAYER 457
             </div>
 
             {/* Desktop Navigation */}

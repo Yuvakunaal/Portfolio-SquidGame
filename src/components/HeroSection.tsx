@@ -88,7 +88,7 @@ const HeroSection = () => {
             }
             className="btn-game cursor-hover"
           >
-            RECRUIT FOR DATA ROLES
+            BEGIN RECRUITMENT
           </button>
         </div>
 

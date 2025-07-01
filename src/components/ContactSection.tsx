@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import githubIcon from "./github.png";
+import linkedinIcon from "./linkedin.png";
+import emailIcon from "./email.png";
+import phoneIcon from "./phone-call.png";
+import gpsIcon from "./gps.png";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -60,8 +65,14 @@ ${formData.name}`);
 
               <div className="space-y-4">
                 <div className="flex items-center space-x-4 cursor-hover">
-                  <div className="w-12 h-12 bg-squid-red/20 rounded-full flex items-center justify-center">
-                    <span className="text-squid-red text-xl">📧</span>
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center">
+                    <span className="text-squid-red text-xl">
+                      <img
+                        style={{ width: "30px" }}
+                        src={emailIcon}
+                        alt="email"
+                      />
+                    </span>
                   </div>
                   <div>
                     <div className="font-rajdhani font-semibold text-squid-cyan">
@@ -74,8 +85,14 @@ ${formData.name}`);
                 </div>
 
                 <div className="flex items-center space-x-4 cursor-hover">
-                  <div className="w-12 h-12 bg-squid-red/20 rounded-full flex items-center justify-center">
-                    <span className="text-squid-red text-xl">📱</span>
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center">
+                    <span className="text-squid-red text-xl">
+                      <img
+                        style={{ width: "30px" }}
+                        src={phoneIcon}
+                        alt="phone"
+                      />
+                    </span>
                   </div>
                   <div>
                     <div className="font-rajdhani font-semibold text-squid-cyan">
@@ -88,8 +105,14 @@ ${formData.name}`);
                 </div>
 
                 <div className="flex items-center space-x-4 cursor-hover">
-                  <div className="w-12 h-12 bg-squid-red/20 rounded-full flex items-center justify-center">
-                    <span className="text-squid-red text-xl">💼</span>
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center">
+                    <span className="text-squid-red text-xl">
+                      <img
+                        style={{ width: "30px" }}
+                        src={linkedinIcon}
+                        alt="linkedin"
+                      />
+                    </span>
                   </div>
                   <div>
                     <div className="font-rajdhani font-semibold text-squid-cyan">
@@ -107,8 +130,14 @@ ${formData.name}`);
                 </div>
 
                 <div className="flex items-center space-x-4 cursor-hover">
-                  <div className="w-12 h-12 bg-squid-red/20 rounded-full flex items-center justify-center">
-                    <span className="text-squid-red text-xl">💻</span>
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center">
+                    <span className="text-squid-red text-xl">
+                      <img
+                        style={{ width: "30px" }}
+                        src={githubIcon}
+                        alt="github"
+                      />
+                    </span>
                   </div>
                   <div>
                     <div className="font-rajdhani font-semibold text-squid-cyan">
@@ -126,8 +155,10 @@ ${formData.name}`);
                 </div>
 
                 <div className="flex items-center space-x-4 cursor-hover">
-                  <div className="w-12 h-12 bg-squid-red/20 rounded-full flex items-center justify-center">
-                    <span className="text-squid-red text-xl">📍</span>
+                  <div className="w-12 h-12  rounded-full flex items-center justify-center">
+                    <span className="text-squid-red text-xl">
+                      <img style={{ width: "30px" }} src={gpsIcon} alt="gps" />
+                    </span>
                   </div>
                   <div>
                     <div className="font-rajdhani font-semibold text-squid-cyan">

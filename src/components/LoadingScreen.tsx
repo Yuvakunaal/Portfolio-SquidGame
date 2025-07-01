@@ -9,7 +9,7 @@ const LoadingScreen = () => {
             {/* Squid Game Token */}
             <div className="w-full h-full rounded-full bg-gradient-to-br from-squid-pink to-squid-red animate-neon-pulse flex items-center justify-center">
               <div className="text-5xl font-orbitron font-black text-squid-black">
-                456
+                457
               </div>
             </div>
           </div>

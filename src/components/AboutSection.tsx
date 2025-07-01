@@ -19,7 +19,7 @@ const AboutSection = () => {
               <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-transparent border border-red-500 flex items-center justify-center cursor-hover">
                 <img src={profilePic} alt="profile" />
               </div>
-              <h3 className="text-2xl font-orbitron font-bold neon-text-cyan mb-2">
+              <h3 className="text-2xl font-orbitron font-extrabold text-squid-cyan mb-2">
                 BOGGAVARAPU YUVA SATYA KUNAAL
               </h3>
               <p className="text-squid-cyan font-rajdhani">
@@ -33,7 +33,7 @@ const AboutSection = () => {
             <div className="space-y-6">
               <div className="flex justify-between border-b border-squid-red pb-2">
                 <span className="font-rajdhani font-semibold">CGPA:</span>
-                <span className="text-squid-cyan">9.01/10</span>
+                <span className="text-squid-cyan">9.07/10</span>
               </div>
               <div className="flex justify-between border-b border-squid-red pb-2">
                 <span className="font-rajdhani font-semibold">SPECIALTY:</span>
@@ -106,7 +106,7 @@ const AboutSection = () => {
             </div>
             <div className="text-center glass p-6 rounded-lg cursor-hover">
               <div className="text-3xl font-orbitron font-black text-squid-red mb-2">
-                9.01
+                9.07
               </div>
               <div className="font-rajdhani text-sm text-gray-400">
                 CGPA EXCELLENCE
@@ -150,7 +150,7 @@ const AboutSection = () => {
               </p>
               <div className="inline-block bg-squid-red/20 px-4 py-2 rounded-full border border-squid-red">
                 <span className="font-orbitron font-bold text-squid-red">
-                  CGPA: 9.01/10
+                  CGPA: 9.07/10
                 </span>
               </div>
             </div>
