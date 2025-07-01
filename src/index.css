@@ -1,105 +1,177 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Squid Game themed design system */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 10 10% 4%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 10 10% 4%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 10 10% 4%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 348 100% 50%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 180 100% 50%;
+    --secondary-foreground: 10 10% 4%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 348 100% 50%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 348 100% 50%;
 
     --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-}
-
-@layer base {
+  
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-squid-black text-squid-white font-rajdhani;
+    cursor: none;
+    overflow-x: hidden;
+  }
+
+  /* Custom cursor */
+  .custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #ff0040 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease-out;
+  }
+
+  .custom-cursor.hover {
+    transform: scale(2);
+    background: radial-gradient(circle, #00ffff 0%, transparent 70%);
+  }
+
+  /* Glassmorphism effects */
+  .glass {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-red {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 0, 64, 0.1);
+    border: 1px solid rgba(255, 0, 64, 0.3);
+  }
+
+  /* Neon text effects */
+  .neon-text {
+    text-shadow: 
+      0 0 5px #ff0040,
+      0 0 10px #ff0040,
+      0 0 15px #ff0040,
+      0 0 20px #ff0040;
+  }
+
+  .neon-text-cyan {
+    text-shadow: 
+      0 0 5px #00ffff,
+      0 0 10px #00ffff,
+      0 0 15px #00ffff,
+      0 0 20px #00ffff;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #ff0040, #ff69b4);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #ff69b4, #00ffff);
+  }
+}
+
+@layer components {
+  .btn-game {
+    @apply px-6 py-3 bg-transparent border-2 border-squid-red text-squid-red font-orbitron font-bold uppercase tracking-wider transition-all duration-300 hover:bg-squid-red hover:text-squid-black hover:shadow-lg;
+    box-shadow: 0 0 20px rgba(255, 0, 64, 0.3);
+  }
+
+  .btn-game:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 64, 0.6);
+    transform: translateY(-2px);
+  }
+
+  .skill-tile {
+    @apply glass p-6 rounded-lg transition-all duration-300 hover:scale-105 cursor-pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .skill-tile:hover {
+    @apply glass-red;
+    box-shadow: 0 10px 30px rgba(255, 0, 64, 0.3);
+  }
+
+  .project-card {
+    @apply glass rounded-lg overflow-hidden transition-all duration-500 hover:scale-105;
+    border: 1px solid rgba(255, 0, 64, 0.2);
+  }
+
+  .project-card:hover {
+    @apply glass-red;
+    box-shadow: 0 20px 40px rgba(255, 0, 64, 0.4);
+    border-color: rgba(255, 0, 64, 0.6);
+  }
+}
+
+/* Guard SVG animations */
+.guard-svg {
+  filter: drop-shadow(0 0 10px rgba(255, 105, 180, 0.5));
+}
+
+/* Loading animation */
+.loading-text::after {
+  content: '';
+  animation: loading-dots 1.5s infinite;
+}
+
+@keyframes loading-dots {
+  0%, 20% { content: ''; }
+  40% { content: '.'; }
+  60% { content: '..'; }
+  80%, 100% { content: '...'; }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+  
+  body {
+    cursor: auto;
   }
 }
