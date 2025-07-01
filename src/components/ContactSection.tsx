@@ -1,15 +1,12 @@
 
 import React, { useState } from 'react';
-import { toast } from 'sonner';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     company: '',
-    message: ''
+    details: ''
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -19,22 +16,22 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
+    
+    // Create email content
+    const subject = encodeURIComponent(`Recruitment Opportunity - ${formData.company || 'Company'}`);
+    const body = encodeURIComponent(`Hello Yuva Kunaal,
 
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success('Message sent! Welcome to the recruitment process!', {
-        style: {
-          background: '#ff0040',
-          color: '#ffffff',
-          border: '1px solid #ff69b4'
-        }
-      });
-      setFormData({ name: '', email: '', company: '', message: '' });
-      setIsSubmitting(false);
-    }, 2000);
+I am ${formData.name} from ${formData.company || '[Company Name]'}.
+
+${formData.details}
+
+Best regards,
+${formData.name}`);
+    
+    // Open email client
+    window.location.href = `mailto:bhavikunaal@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -198,22 +195,7 @@ const ContactSection = () => {
               
               <div>
                 <label className="block font-rajdhani font-semibold text-squid-cyan mb-2">
-                  EMAIL ADDRESS *
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-squid-black/50 border border-squid-red/30 rounded font-rajdhani text-squid-white focus:border-squid-red focus:ring-1 focus:ring-squid-red transition-all duration-300 cursor-hover"
-                  placeholder="your.email@company.com"
-                  required
-                />
-              </div>
-              
-              <div>
-                <label className="block font-rajdhani font-semibold text-squid-cyan mb-2">
-                  COMPANY / ORGANIZATION
+                  COMPANY / ORGANIZATION *
                 </label>
                 <input
                   type="text"
@@ -222,6 +204,7 @@ const ContactSection = () => {
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 bg-squid-black/50 border border-squid-red/30 rounded font-rajdhani text-squid-white focus:border-squid-red focus:ring-1 focus:ring-squid-red transition-all duration-300 cursor-hover"
                   placeholder="Your company name"
+                  required
                 />
               </div>
               
@@ -230,8 +213,8 @@ const ContactSection = () => {
                   JOB OPPORTUNITY DETAILS *
                 </label>
                 <textarea
-                  name="message"
-                  value={formData.message}
+                  name="details"
+                  value={formData.details}
                   onChange={handleInputChange}
                   rows={4}
                   className="w-full px-4 py-3 bg-squid-black/50 border border-squid-red/30 rounded font-rajdhani text-squid-white focus:border-squid-red focus:ring-1 focus:ring-squid-red transition-all duration-300 cursor-hover resize-none"
@@ -242,10 +225,9 @@ const ContactSection = () => {
               
               <button
                 type="submit"
-                disabled={isSubmitting}
-                className="w-full btn-game py-4 cursor-hover disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full btn-game py-4 cursor-hover"
               >
-                {isSubmitting ? 'SENDING RECRUITMENT OFFER...' : 'RECRUIT YUVA KUNAAL'}
+                RECRUIT YUVA KUNAAL
               </button>
             </form>
           </div>
