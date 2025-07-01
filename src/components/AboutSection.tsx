@@ -1,5 +1,5 @@
-
-import React from 'react';
+import React from "react";
+import profilePic from "./ui/profile-removebg.png";
 
 const AboutSection = () => {
   return (
@@ -16,8 +16,8 @@ const AboutSection = () => {
           {/* Player Card */}
           <div className="glass-red p-8 rounded-lg">
             <div className="text-center mb-8">
-              <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-squid-pink to-squid-red flex items-center justify-center cursor-hover">
-                <span className="text-4xl font-orbitron font-black text-squid-black">456</span>
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-transparent border border-red-500 flex items-center justify-center cursor-hover">
+                <img src={profilePic} alt="profile" />
               </div>
               <h3 className="text-2xl font-orbitron font-bold neon-text-cyan mb-2">
                 BOGGAVARAPU YUVA SATYA KUNAAL
@@ -37,7 +37,10 @@ const AboutSection = () => {
               </div>
               <div className="flex justify-between border-b border-squid-red pb-2">
                 <span className="font-rajdhani font-semibold">SPECIALTY:</span>
-                <span className="text-squid-cyan">DATA ANALYSIS & FULL-STACK</span>
+                <span className="text-squid-cyan">
+                  {" "}
+                  &nbsp;DATA ANALYSIS & FULL-STACK
+                </span>
               </div>
               <div className="flex justify-between border-b border-squid-red pb-2">
                 <span className="font-rajdhani font-semibold">LEVEL:</span>
@@ -57,9 +60,10 @@ const AboutSection = () => {
                 THE DATA WARRIOR
               </h4>
               <p className="font-rajdhani text-gray-300 leading-relaxed">
-                From CBIT's AI & Data Science program, I've emerged as a skilled combatant 
-                in both data analysis and full-stack development. My journey through 10,000+ 
-                hotel booking records and 500+ user platforms has forged me into a versatile developer.
+                From CBIT's AI & Data Science program, I've emerged as a skilled
+                combatant in both data analysis and full-stack development. My
+                journey through 10,000+ hotel booking records and 500+ user
+                platforms has forged me into a versatile developer.
               </p>
             </div>
 
@@ -68,9 +72,10 @@ const AboutSection = () => {
                 THE TECHNICAL ARSENAL
               </h4>
               <p className="font-rajdhani text-gray-300 leading-relaxed">
-                Armed with Python mastery (5★ HackerRank), MERN stack expertise, and SQL supremacy, 
-                I've conquered challenges from ByteXl internships to competitive programming arenas. 
-                My weapons include data visualization and scalable backend architectures.
+                Armed with Python mastery (5★ HackerRank), MERN stack expertise,
+                and SQL supremacy, I've conquered challenges from ByteXl
+                internships to competitive programming arenas. My weapons
+                include data visualization and scalable backend architectures.
               </p>
             </div>
 
@@ -79,9 +84,10 @@ const AboutSection = () => {
                 THE MISSION
               </h4>
               <p className="font-rajdhani text-gray-300 leading-relaxed">
-                Ready to dominate the data analysis and full-stack development battlegrounds. 
-                My goal: transform raw data into actionable insights and build scalable solutions 
-                that serve hundreds of users while leading teams to victory.
+                Ready to dominate the data analysis and full-stack development
+                battlegrounds. My goal: transform raw data into actionable
+                insights and build scalable solutions that serve hundreds of
+                users while leading teams to victory.
               </p>
             </div>
           </div>
@@ -91,20 +97,36 @@ const AboutSection = () => {
         <div className="mt-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center glass p-6 rounded-lg cursor-hover">
-              <div className="text-3xl font-orbitron font-black text-squid-red mb-2">200+</div>
-              <div className="font-rajdhani text-sm text-gray-400">LEETCODE PROBLEMS</div>
+              <div className="text-3xl font-orbitron font-black text-squid-red mb-2">
+                200+
+              </div>
+              <div className="font-rajdhani text-sm text-gray-400">
+                LEETCODE PROBLEMS
+              </div>
             </div>
             <div className="text-center glass p-6 rounded-lg cursor-hover">
-              <div className="text-3xl font-orbitron font-black text-squid-red mb-2">9.01</div>
-              <div className="font-rajdhani text-sm text-gray-400">CGPA EXCELLENCE</div>
+              <div className="text-3xl font-orbitron font-black text-squid-red mb-2">
+                9.01
+              </div>
+              <div className="font-rajdhani text-sm text-gray-400">
+                CGPA EXCELLENCE
+              </div>
             </div>
             <div className="text-center glass p-6 rounded-lg cursor-hover">
-              <div className="text-3xl font-orbitron font-black text-squid-red mb-2">5★</div>
-              <div className="font-rajdhani text-sm text-gray-400">PYTHON RATING</div>
+              <div className="text-3xl font-orbitron font-black text-squid-red mb-2">
+                5★
+              </div>
+              <div className="font-rajdhani text-sm text-gray-400">
+                PYTHON RATING
+              </div>
             </div>
             <div className="text-center glass p-6 rounded-lg cursor-hover">
-              <div className="text-3xl font-orbitron font-black text-squid-red mb-2">500+</div>
-              <div className="font-rajdhani text-sm text-gray-400">USERS SERVED</div>
+              <div className="text-3xl font-orbitron font-black text-squid-red mb-2">
+                ETL
+              </div>
+              <div className="font-rajdhani text-sm text-gray-400">
+                DATA ANALYSIS
+              </div>
             </div>
           </div>
         </div>
@@ -120,13 +142,16 @@ const AboutSection = () => {
                 CHAITANYA BHARATHI INSTITUTE OF TECHNOLOGY
               </h4>
               <p className="font-rajdhani text-squid-cyan mb-2">
-                Bachelor of Engineering - Artificial Intelligence and Data Science
+                Bachelor of Engineering - Artificial Intelligence and Data
+                Science
               </p>
               <p className="font-rajdhani text-gray-300 text-sm mb-4">
                 Nov 2022 – Present | Hyderabad, Telangana
               </p>
               <div className="inline-block bg-squid-red/20 px-4 py-2 rounded-full border border-squid-red">
-                <span className="font-orbitron font-bold text-squid-red">CGPA: 9.01/10</span>
+                <span className="font-orbitron font-bold text-squid-red">
+                  CGPA: 9.01/10
+                </span>
               </div>
             </div>
           </div>

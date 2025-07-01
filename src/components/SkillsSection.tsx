@@ -34,9 +34,9 @@ const SkillsSection = () => {
           description: "MongoDB, Express, React, Node.js",
         },
         {
-          name: "Flask",
+          name: "React Bits",
           level: 85,
-          description: "Python web framework & REST APIs",
+          description: "React animated Inbuild components",
         },
         { name: "HTML/CSS", level: 88, description: "Responsive UI/UX design" },
         {
@@ -56,9 +56,9 @@ const SkillsSection = () => {
         },
         { name: "NumPy", level: 85, description: "Numerical computing power" },
         {
-          name: "Matplotlib",
-          level: 80,
-          description: "Data visualization expert",
+          name: "Spark",
+          level: 85,
+          description: "Data Analysis - ETL",
         },
         {
           name: "Excel",
@@ -265,7 +265,7 @@ const SkillsSection = () => {
                 CODECHEF CHAMPION
               </h4>
               <p className="text-sm font-rajdhani text-gray-300">
-                3★ Rated Coder (College Highest)
+                3★ Rated Coder (Personal Highest)
               </p>
             </div>
           </div>

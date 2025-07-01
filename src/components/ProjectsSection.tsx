@@ -232,6 +232,7 @@ const ProjectsSection = () => {
                     </a>
                     <a
                       href={project.live}
+                      target="_blank"
                       className="flex-1 text-center py-2 bg-squid-red text-squid-black text-xs font-rajdhani font-bold uppercase tracking-wider transition-all duration-300 hover:bg-squid-pink cursor-hover"
                     >
                       LIVE DEMO
