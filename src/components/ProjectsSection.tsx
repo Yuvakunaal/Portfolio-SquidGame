@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
@@ -7,42 +6,70 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "VIRTUAL EVENT PLATFORM",
-      challenge: "Build a scalable event management system",
+      title: "EVENT SPARK",
+      challenge: "Build a scalable VIRTUAL EVENT PLATFORM",
       status: "COMPLETED",
       difficulty: "EXTREME",
-      technologies: ["HTML", "CSS", "JavaScript", "Express.js", "Node.js", "MongoDB"],
-      description: "Full-stack platform enabling 500+ users to create, manage, and participate in events. Implemented role-based functionality with intuitive navigation and scalable backend architecture.",
-      features: ["Role-based Access Control", "Event Creation & Management", "User Registration System", "Scalable Backend Architecture"],
+      technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Express.js",
+        "Node.js",
+        "MongoDB",
+      ],
+      description:
+        "Full-stack platform enabling 500+ users to create, manage, and participate in events. Implemented role-based functionality with intuitive navigation and scalable backend architecture.",
+      features: [
+        "Role-based Access Control",
+        "Event Creation & Management",
+        "User Registration System",
+        "Scalable Backend Architecture",
+      ],
       metrics: "40% faster event management, 25% reduced server load",
-      github: "https://github.com/Yuvakunaal",
-      live: "#"
+      github:
+        "https://github.com/Yuvakunaal/EventSpark--Virtual-Event-Platform",
+      live: "https://github.com/Yuvakunaal/EventSpark--Virtual-Event-Platform",
     },
     {
       id: 2,
-      title: "YT-INSTA VIDEO DOWNLOADER",
-      challenge: "Create multi-platform video downloading solution",
-      status: "COMPLETED",
-      difficulty: "HARD",
-      technologies: ["Python", "Streamlit", "yt-dlp", "instaloader"],
-      description: "User-friendly web application enabling seamless video downloads from YouTube and Instagram. Built with Python and Streamlit for optimal user experience.",
-      features: ["Multi-platform Support", "Streamlit Web Interface", "Download Optimization", "User-friendly Design"],
-      metrics: "50% faster downloads, 200+ active users, 15% retention increase",
-      github: "https://github.com/Yuvakunaal",
-      live: "#"
-    },
-    {
-      id: 3,
       title: "HOTEL BOOKING ANALYSIS",
       challenge: "Extract insights from booking data patterns",
       status: "COMPLETED",
       difficulty: "EXTREME",
       technologies: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn"],
-      description: "Comprehensive data analysis on 10,000+ hotel bookings, uncovering critical business insights including peak booking patterns and cancellation trends.",
-      features: ["Statistical Analysis", "Data Visualization", "Trend Identification", "Business Intelligence"],
-      metrics: "Analyzed 10,000+ records, identified key patterns for optimization",
-      github: "https://github.com/Yuvakunaal",
-      live: "#"
+      description:
+        "Comprehensive data analysis on 10,000+ hotel bookings, uncovering critical business insights including peak booking patterns and cancellation trends.",
+      features: [
+        "Statistical Analysis",
+        "Data Visualization",
+        "Trend Identification",
+        "Business Intelligence",
+      ],
+      metrics:
+        "Analyzed 10,000+ records, identified key patterns for optimization",
+      github: "https://github.com/Yuvakunaal/Hotel-Booking-Analysis",
+      live: "https://github.com/Yuvakunaal/Hotel-Booking-Analysis",
+    },
+    {
+      id: 3,
+      title: "YT-INSTA VIDEO DOWNLOADER",
+      challenge: "Create multi-platform video downloading solution",
+      status: "COMPLETED",
+      difficulty: "HARD",
+      technologies: ["Python", "Streamlit", "yt-dlp", "instaloader"],
+      description:
+        "User-friendly web application enabling seamless video downloads from YouTube and Instagram. Built with Python and Streamlit for optimal user experience.",
+      features: [
+        "Multi-platform Support",
+        "Streamlit Web Interface",
+        "Download Optimization",
+        "User-friendly Design",
+      ],
+      metrics:
+        "50% faster downloads, 200+ active users, 15% retention increase",
+      github: "https://github.com/Yuvakunaal/YT-Insta-MP4-Download",
+      live: "https://yt-insta-mp4.streamlit.app/",
     },
     {
       id: 4,
@@ -51,30 +78,45 @@ const ProjectsSection = () => {
       status: "COMPLETED",
       difficulty: "HARD",
       technologies: ["AWS EC2", "HTML", "CSS", "JavaScript", "Linux", "Apache"],
-      description: "Successfully deployed a static website on Amazon Web Services EC2 instance, demonstrating cloud infrastructure management and deployment skills with proper security configurations.",
-      features: ["AWS EC2 Configuration", "Apache Web Server Setup", "Security Group Management", "Domain Configuration"],
+      description:
+        "Successfully deployed a static website on Amazon Web Services EC2 instance, demonstrating cloud infrastructure management and deployment skills with proper security configurations.",
+      features: [
+        "AWS EC2 Configuration",
+        "Apache Web Server Setup",
+        "Security Group Management",
+        "Domain Configuration",
+      ],
       metrics: "100% uptime, secure cloud deployment, scalable infrastructure",
       github: "https://github.com/Yuvakunaal/Website-AWS-EC2-Deployment",
-      live: "#"
-    }
+      live: "https://github.com/Yuvakunaal/Website-AWS-EC2-Deployment",
+    },
   ];
 
   const getDifficultyColor = (difficulty: string) => {
     switch (difficulty) {
-      case 'EASY': return 'text-green-400';
-      case 'HARD': return 'text-yellow-400';
-      case 'EXTREME': return 'text-orange-400';
-      case 'NIGHTMARE': return 'text-squid-red';
-      default: return 'text-gray-400';
+      case "EASY":
+        return "text-green-400";
+      case "HARD":
+        return "text-yellow-400";
+      case "EXTREME":
+        return "text-orange-400";
+      case "NIGHTMARE":
+        return "text-squid-red";
+      default:
+        return "text-gray-400";
     }
   };
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'COMPLETED': return 'text-squid-cyan';
-      case 'IN PROGRESS': return 'text-yellow-400';
-      case 'ELIMINATED': return 'text-squid-red';
-      default: return 'text-gray-400';
+      case "COMPLETED":
+        return "text-squid-cyan";
+      case "IN PROGRESS":
+        return "text-yellow-400";
+      case "ELIMINATED":
+        return "text-squid-red";
+      default:
+        return "text-gray-400";
     }
   };
 
@@ -97,7 +139,11 @@ const ProjectsSection = () => {
               key={project.id}
               className="project-card p-6 cursor-hover animate-fade-in"
               style={{ animationDelay: `${index * 0.2}s` }}
-              onClick={() => setSelectedProject(selectedProject === project.id ? null : project.id)}
+              onClick={() =>
+                setSelectedProject(
+                  selectedProject === project.id ? null : project.id
+                )
+              }
             >
               {/* Project Header */}
               <div className="flex justify-between items-start mb-4">
@@ -110,10 +156,18 @@ const ProjectsSection = () => {
                   </p>
                 </div>
                 <div className="text-right">
-                  <div className={`text-sm font-rajdhani font-bold ${getStatusColor(project.status)}`}>
+                  <div
+                    className={`text-sm font-rajdhani font-bold ${getStatusColor(
+                      project.status
+                    )}`}
+                  >
                     {project.status}
                   </div>
-                  <div className={`text-xs font-rajdhani ${getDifficultyColor(project.difficulty)}`}>
+                  <div
+                    className={`text-xs font-rajdhani ${getDifficultyColor(
+                      project.difficulty
+                    )}`}
+                  >
                     {project.difficulty}
                   </div>
                 </div>
@@ -144,22 +198,29 @@ const ProjectsSection = () => {
               </div>
 
               {/* Expandable Details */}
-              <div className={`transition-all duration-500 overflow-hidden ${
-                selectedProject === project.id ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-              }`}>
+              <div
+                className={`transition-all duration-500 overflow-hidden ${
+                  selectedProject === project.id
+                    ? "max-h-96 opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
                 <div className="border-t border-squid-red/30 pt-4 mt-4">
                   <h4 className="font-orbitron font-bold text-squid-cyan text-sm mb-3">
                     KEY FEATURES:
                   </h4>
                   <div className="grid grid-cols-2 gap-2 mb-4">
                     {project.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center text-xs font-rajdhani text-gray-300">
+                      <div
+                        key={featureIndex}
+                        className="flex items-center text-xs font-rajdhani text-gray-300"
+                      >
                         <div className="w-2 h-2 bg-squid-red rounded-full mr-2"></div>
                         {feature}
                       </div>
                     ))}
                   </div>
-                  
+
                   <div className="flex gap-4">
                     <a
                       href={project.github}
@@ -182,7 +243,9 @@ const ProjectsSection = () => {
               {/* Click Indicator */}
               <div className="text-center mt-4">
                 <div className="text-xs font-rajdhani text-gray-500">
-                  Click to {selectedProject === project.id ? 'collapse' : 'expand'} details
+                  Click to{" "}
+                  {selectedProject === project.id ? "collapse" : "expand"}{" "}
+                  details
                 </div>
               </div>
             </div>
@@ -205,16 +268,28 @@ const ProjectsSection = () => {
             </div>
             <div className="grid md:grid-cols-3 gap-4 text-sm font-rajdhani text-gray-300">
               <div className="bg-squid-black/30 p-4 rounded">
-                <span className="text-squid-red font-semibold">ACHIEVEMENT 1:</span><br/>
-                Developed 3+ web applications using Flask, improving deployment efficiency by 20%
+                <span className="text-squid-red font-semibold">
+                  ACHIEVEMENT 1:
+                </span>
+                <br />
+                Developed 3+ web applications using Flask, improving deployment
+                efficiency by 20%
               </div>
               <div className="bg-squid-black/30 p-4 rounded">
-                <span className="text-squid-red font-semibold">ACHIEVEMENT 2:</span><br/>
-                Created responsive interfaces for 100+ users using HTML, CSS, JavaScript, Bootstrap
+                <span className="text-squid-red font-semibold">
+                  ACHIEVEMENT 2:
+                </span>
+                <br />
+                Created responsive interfaces for 100+ users using HTML, CSS,
+                JavaScript, Bootstrap
               </div>
               <div className="bg-squid-black/30 p-4 rounded">
-                <span className="text-squid-red font-semibold">ACHIEVEMENT 3:</span><br/>
-                Enhanced problem-solving skills by mastering Python Data Structures and Algorithms
+                <span className="text-squid-red font-semibold">
+                  ACHIEVEMENT 3:
+                </span>
+                <br />
+                Enhanced problem-solving skills by mastering Python Data
+                Structures and Algorithms
               </div>
             </div>
           </div>
@@ -227,11 +302,16 @@ const ProjectsSection = () => {
               READY FOR THE NEXT CHALLENGE?
             </h3>
             <p className="font-rajdhani text-gray-300 mb-6">
-              These victories represent my journey through data analysis and full-stack development. 
-              I'm ready to bring my skills to your organization's most challenging projects.
+              These victories represent my journey through data analysis and
+              full-stack development. I'm ready to bring my skills to your
+              organization's most challenging projects.
             </p>
-            <button 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            <button
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="btn-game cursor-hover"
             >
               RECRUIT FOR DATA & DEVELOPMENT ROLES

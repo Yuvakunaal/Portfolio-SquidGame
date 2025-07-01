@@ -1,35 +1,38 @@
-
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    company: '',
-    details: ''
+    name: "",
+    company: "",
+    details: "",
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Create email content
-    const subject = encodeURIComponent(`Recruitment Opportunity - ${formData.company || 'Company'}`);
+    const subject = encodeURIComponent(
+      `Recruitment Opportunity - ${formData.company || "Company"}`
+    );
     const body = encodeURIComponent(`Hello Yuva Kunaal,
 
-I am ${formData.name} from ${formData.company || '[Company Name]'}.
+I am ${formData.name} from ${formData.company || "[Company Name]"}.
 
 ${formData.details}
 
 Best regards,
 ${formData.name}`);
-    
+
     // Open email client
     window.location.href = `mailto:bhavikunaal@gmail.com?subject=${subject}&body=${body}`;
   };
@@ -38,7 +41,7 @@ ${formData.name}`);
     <div className="min-h-screen py-20 px-6 bg-gradient-to-b from-gray-900 to-squid-black">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-orbitron font-black neon-text mb-4">
+          <h2 className="text-3xl md:text-6xl font-orbitron font-black neon-text mb-4">
             RECRUITMENT PHASE
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-squid-red to-squid-pink mx-auto mb-6"></div>
@@ -54,47 +57,69 @@ ${formData.name}`);
               <h3 className="text-2xl font-orbitron font-bold text-squid-red mb-6">
                 PLAYER COORDINATES
               </h3>
-              
+
               <div className="space-y-4">
                 <div className="flex items-center space-x-4 cursor-hover">
                   <div className="w-12 h-12 bg-squid-red/20 rounded-full flex items-center justify-center">
                     <span className="text-squid-red text-xl">📧</span>
                   </div>
                   <div>
-                    <div className="font-rajdhani font-semibold text-squid-cyan">Email</div>
-                    <div className="font-rajdhani text-gray-300">bhavikunaal@gmail.com</div>
+                    <div className="font-rajdhani font-semibold text-squid-cyan">
+                      Email
+                    </div>
+                    <div className="font-rajdhani text-gray-300">
+                      bhavikunaal@gmail.com
+                    </div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center space-x-4 cursor-hover">
                   <div className="w-12 h-12 bg-squid-red/20 rounded-full flex items-center justify-center">
                     <span className="text-squid-red text-xl">📱</span>
                   </div>
                   <div>
-                    <div className="font-rajdhani font-semibold text-squid-cyan">Phone</div>
-                    <div className="font-rajdhani text-gray-300">+91 8897160549</div>
+                    <div className="font-rajdhani font-semibold text-squid-cyan">
+                      Phone
+                    </div>
+                    <div className="font-rajdhani text-gray-300">
+                      +91 8897160549
+                    </div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center space-x-4 cursor-hover">
                   <div className="w-12 h-12 bg-squid-red/20 rounded-full flex items-center justify-center">
                     <span className="text-squid-red text-xl">💼</span>
                   </div>
                   <div>
-                    <div className="font-rajdhani font-semibold text-squid-cyan">LinkedIn</div>
-                    <a href="https://www.linkedin.com/in/yuva-kunaal-127817290/" target="_blank" rel="noopener noreferrer" className="font-rajdhani text-gray-300 hover:text-squid-cyan transition-colors">
+                    <div className="font-rajdhani font-semibold text-squid-cyan">
+                      LinkedIn
+                    </div>
+                    <a
+                      href="https://www.linkedin.com/in/boggavarapu-yuva-satya-kunaal-127817290/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-rajdhani text-gray-300 hover:text-squid-cyan transition-colors"
+                    >
                       /in/yuva-kunaal-127817290/
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center space-x-4 cursor-hover">
                   <div className="w-12 h-12 bg-squid-red/20 rounded-full flex items-center justify-center">
                     <span className="text-squid-red text-xl">💻</span>
                   </div>
                   <div>
-                    <div className="font-rajdhani font-semibold text-squid-cyan">GitHub</div>
-                    <a href="https://github.com/Yuvakunaal" target="_blank" rel="noopener noreferrer" className="font-rajdhani text-gray-300 hover:text-squid-cyan transition-colors">
+                    <div className="font-rajdhani font-semibold text-squid-cyan">
+                      GitHub
+                    </div>
+                    <a
+                      href="https://github.com/Yuvakunaal"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-rajdhani text-gray-300 hover:text-squid-cyan transition-colors"
+                    >
                       github.com/Yuvakunaal
                     </a>
                   </div>
@@ -102,23 +127,15 @@ ${formData.name}`);
 
                 <div className="flex items-center space-x-4 cursor-hover">
                   <div className="w-12 h-12 bg-squid-red/20 rounded-full flex items-center justify-center">
-                    <span className="text-squid-red text-xl">🌐</span>
-                  </div>
-                  <div>
-                    <div className="font-rajdhani font-semibold text-squid-cyan">Portfolio</div>
-                    <a href="https://kunaal-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer" className="font-rajdhani text-gray-300 hover:text-squid-cyan transition-colors">
-                      kunaal-portfolio.netlify.app
-                    </a>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4 cursor-hover">
-                  <div className="w-12 h-12 bg-squid-red/20 rounded-full flex items-center justify-center">
                     <span className="text-squid-red text-xl">📍</span>
                   </div>
                   <div>
-                    <div className="font-rajdhani font-semibold text-squid-cyan">Location</div>
-                    <div className="font-rajdhani text-gray-300">Hyderabad, Telangana</div>
+                    <div className="font-rajdhani font-semibold text-squid-cyan">
+                      Location
+                    </div>
+                    <div className="font-rajdhani text-gray-300">
+                      Hyderabad, Telangana
+                    </div>
                   </div>
                 </div>
               </div>
@@ -159,13 +176,25 @@ ${formData.name}`);
                 TARGET ROLES
               </h4>
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-squid-red/20 p-3 rounded text-center">
-                  <div className="font-orbitron font-bold text-squid-red text-sm">DATA ANALYST</div>
-                  <div className="font-rajdhani text-xs text-gray-300 mt-1">Primary Interest</div>
+                <div className="bg-squid-red/20 p-3 rounded flex items-center justify-center h-20">
+                  <div className="font-orbitron font-bold text-squid-red text-sm text-center">
+                    DATA ANALYST
+                  </div>
                 </div>
-                <div className="bg-squid-red/20 p-3 rounded text-center">
-                  <div className="font-orbitron font-bold text-squid-red text-sm">FULL-STACK DEV</div>
-                  <div className="font-rajdhani text-xs text-gray-300 mt-1">MERN Specialist</div>
+                <div className="bg-squid-red/20 p-3 rounded flex items-center justify-center h-20">
+                  <div className="font-orbitron font-bold text-squid-red text-sm text-center">
+                    DATA ENGINEER
+                  </div>
+                </div>
+                <div className="bg-squid-red/20 p-3 rounded flex items-center justify-center h-20">
+                  <div className="font-orbitron font-bold text-squid-red text-sm text-center">
+                    FULL-STACK DEV
+                  </div>
+                </div>
+                <div className="bg-squid-red/20 p-3 rounded flex items-center justify-center h-20">
+                  <div className="font-orbitron font-bold text-squid-red text-sm text-center">
+                    SOFTWARE ENGINEER
+                  </div>
                 </div>
               </div>
             </div>
@@ -176,7 +205,7 @@ ${formData.name}`);
             <h3 className="text-2xl font-orbitron font-bold text-squid-red mb-6">
               SEND RECRUITMENT MESSAGE
             </h3>
-            
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block font-rajdhani font-semibold text-squid-cyan mb-2">
@@ -192,7 +221,7 @@ ${formData.name}`);
                   required
                 />
               </div>
-              
+
               <div>
                 <label className="block font-rajdhani font-semibold text-squid-cyan mb-2">
                   COMPANY / ORGANIZATION *
@@ -207,7 +236,7 @@ ${formData.name}`);
                   required
                 />
               </div>
-              
+
               <div>
                 <label className="block font-rajdhani font-semibold text-squid-cyan mb-2">
                   JOB OPPORTUNITY DETAILS *
@@ -222,7 +251,7 @@ ${formData.name}`);
                   required
                 />
               </div>
-              
+
               <button
                 type="submit"
                 className="w-full btn-game py-4 cursor-hover"
@@ -236,10 +265,11 @@ ${formData.name}`);
         {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-squid-red/30">
           <p className="font-rajdhani text-gray-400 text-sm">
-            © 2024 Boggavarapu Yuva Satya Kunaal. All rights reserved. | Built with React & Tailwind CSS
+            © 2025 Boggavarapu Yuva Satya Kunaal. All rights reserved.
           </p>
           <p className="font-rajdhani text-squid-red text-xs mt-2">
-            "In the game of development, data drives decisions and code conquers challenges."
+            "In the game of development, data drives decisions and code conquers
+            challenges."
           </p>
         </div>
       </div>
