@@ -46,15 +46,15 @@ const ProjectsSection = () => {
     },
     {
       id: 4,
-      title: "BYTEXL INTERNSHIP PROJECTS",
-      challenge: "Develop multiple Flask applications",
+      title: "WEBSITE AWS EC2 DEPLOYMENT",
+      challenge: "Deploy static website on AWS cloud infrastructure",
       status: "COMPLETED",
       difficulty: "HARD",
-      technologies: ["Python", "Flask", "HTML", "CSS", "JavaScript", "Bootstrap"],
-      description: "Created 3+ web applications during technical skilling internship, improving deployment efficiency and serving 100+ users with responsive interfaces.",
-      features: ["Flask Web Apps", "Responsive Design", "User Interface Optimization", "Deployment Automation"],
-      metrics: "20% improved deployment efficiency, 100+ users served",
-      github: "https://github.com/Yuvakunaal",
+      technologies: ["AWS EC2", "HTML", "CSS", "JavaScript", "Linux", "Apache"],
+      description: "Successfully deployed a static website on Amazon Web Services EC2 instance, demonstrating cloud infrastructure management and deployment skills with proper security configurations.",
+      features: ["AWS EC2 Configuration", "Apache Web Server Setup", "Security Group Management", "Domain Configuration"],
+      metrics: "100% uptime, secure cloud deployment, scalable infrastructure",
+      github: "https://github.com/Yuvakunaal/Website-AWS-EC2-Deployment",
       live: "#"
     }
   ];
