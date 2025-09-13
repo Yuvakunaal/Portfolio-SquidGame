@@ -29,7 +29,7 @@ const LoadingScreen = () => {
         </div>
 
         <p className="mt-6 text-sm text-gray-400 font-rajdhani">
-          Welcome to Player 456's Portfolio
+          Welcome to Player 457's Portfolio
         </p>
       </div>
     </div>

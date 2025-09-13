@@ -6,89 +6,285 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "EVENT SPARK",
-      challenge: "Build a scalable VIRTUAL EVENT PLATFORM",
+      title: "Query Forge AI",
+      challenge:
+        "Build a production-ready NL-to-SQL engine with instant execution",
       status: "COMPLETED",
       difficulty: "EXTREME",
       technologies: [
+        "Python",
+        "FastAPI",
+        "MySQL",
+        "Ollama (Mistral)",
+        "GenAI",
+        "Prompt Engineering",
         "HTML",
         "CSS",
-        "JavaScript",
-        "Express.js",
-        "Node.js",
-        "MongoDB",
+        "JS",
       ],
       description:
-        "Full-stack platform enabling 500+ users to create, manage, and participate in events. Implemented role-based functionality with intuitive navigation and scalable backend architecture.",
+        "Built an AI-powered NL→SQL engine with intelligent date handling, schema-aware validation, and an instant execution UI. Delivers end-to-end query roundtrips in 200–600 ms on local Ollama setups.",
       features: [
-        "Role-based Access Control",
-        "Event Creation & Management",
-        "User Registration System",
-        "Scalable Backend Architecture",
+        "Natural Language to SQL Conversion",
+        "Schema Inspector & Data Preview",
+        "Modular LLM Prompts for Safe SQL Generation",
+        "Automatic Table/Schema Discovery",
+        "Production-ready FastAPI Service with CORS & Error Handling",
       ],
-      metrics: "40% faster event management, 25% reduced server load",
-      github:
-        "https://github.com/Yuvakunaal/EventSpark--Virtual-Event-Platform",
-      live: "https://github.com/Yuvakunaal/EventSpark--Virtual-Event-Platform",
+      metrics:
+        "End-to-end query execution in 200-600ms, high usability with low-friction onboarding",
+      github: "https://github.com/Yuvakunaal/QueryForgeAI",
+      live: "https://github.com/Yuvakunaal/QueryForgeAI",
     },
     {
       id: 2,
-      title: "HOTEL BOOKING ANALYSIS",
-      challenge: "Extract insights from booking data patterns",
+      title: "AnalyzeQuestion - AI Coding Pattern Detector",
+      challenge:
+        "Create an AI analyzer to deconstruct coding problems for efficient study",
       status: "COMPLETED",
       difficulty: "EXTREME",
-      technologies: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn"],
+      technologies: [
+        "Python",
+        "FastAPI",
+        "Ollama (Mistral)",
+        "RAG",
+        "SQLite",
+        "Prompt Engineering",
+      ],
       description:
-        "Comprehensive data analysis on 10,000+ hotel bookings, uncovering critical business insights including peak booking patterns and cancellation trends.",
+        "An AI analyzer that detects algorithmic patterns (DP, graphs, greedy, etc.), classifies difficulty, and generates a step-by-step approach in strict JSON for interview prep and competitive programming.",
       features: [
-        "Statistical Analysis",
-        "Data Visualization",
-        "Trend Identification",
-        "Business Intelligence",
+        "Algorithmic Pattern Detection (DP, Graphs, Greedy, Search)",
+        "Difficulty Classification",
+        "Lightweight RAG for Similar Problem Retrieval",
+        "Structured JSON Output with Schema-aware Prompting",
+        "Responsive UI with History Tracking & Dark/Light Mode",
       ],
       metrics:
-        "Analyzed 10,000+ records, identified key patterns for optimization",
+        "Improved study-to-solve time by 40-60%, higher pattern recall vs. no-RAG baseline",
+      github: "https://github.com/Yuvakunaal/AnalyzeQuestion",
+      live: "https://github.com/Yuvakunaal/AnalyzeQuestion",
+    },
+    {
+      id: 3,
+      title: "Anonyma – Anonymous Communication System",
+      challenge:
+        "Create a secure, real-time platform for anonymous communication with anti-abuse measures",
+      status: "COMPLETED",
+      difficulty: "EXTREME",
+      technologies: [
+        "Flask",
+        "WebSockets",
+        "Javascript",
+        "REST APIs",
+        "Authentication & Security",
+        "AI (LLM)",
+      ],
+      description:
+        "Built a secure real-time communication platform with public/private chatrooms, strict IP-based usage limits to prevent misuse, and AI-powered features for developers.",
+      features: [
+        "Public & Password-Protected Chatrooms",
+        "IP-Based Usage Limits (max 5 rooms/day/user)",
+        "AI-Powered Code Detection & Summarization",
+        "Automatic Deletion of Inactive Rooms (24h)",
+      ],
+      metrics:
+        "Reduced server load by 35%, enforced strict anti-abuse policies",
+      github: "https://github.com/Yuvakunaal/Anonyma",
+      live: "https://github.com/Yuvakunaal/Anonyma",
+    },
+    {
+      id: 4,
+      title: "ERP Academic Intelligence Engine",
+      challenge:
+        "Automate the extraction and analysis of academic records from a legacy ERP",
+      status: "COMPLETED",
+      difficulty: "EXTREME",
+      technologies: [
+        "Python",
+        "GenAI",
+        "LLM",
+        "EasyOCR",
+        "Pandas",
+        "Selenium",
+        "ETL Pipelines",
+        "Gradio",
+      ],
+      description:
+        "Built an intelligent ETL pipeline to extract and structure academic data from ERP screenshots into SGPA/CGPA records with high accuracy, eliminating manual data entry.",
+      features: [
+        "Intelligent ETL Pipeline with EasyOCR & LLM (Mistral-TB)",
+        "Adaptive Selenium Automation for 12+ ERP variants",
+        "Academic Performance Analytics & Visualization",
+        "Gradio Interface for Easy Interaction",
+      ],
+      metrics:
+        "99%+ data accuracy, saved 8+ manual hours weekly, reduced verification time by 65%",
+      github: "https://github.com/Yuvakunaal/ERP-Grade-Automation",
+      live: "https://github.com/Yuvakunaal/ERP-Grade-Automation",
+    },
+    {
+      id: 5,
+      title: "ChatwithPdf",
+      challenge: "Build an AI-powered PDF query system with OCR capabilities",
+      status: "COMPLETED",
+      difficulty: "EXTREME",
+      technologies: [
+        "Python",
+        "FastAPI",
+        "Ollama",
+        "PyMuPDF",
+        "Tesseract OCR",
+        "JavaScript",
+      ],
+      description:
+        "A web application that allows users to upload PDF documents and ask natural language questions about their content, with support for both text-based and scanned PDFs through OCR technology.",
+      features: [
+        "Text Extraction from PDFs",
+        "OCR for Scanned Documents",
+        "Natural Language Query Processing",
+        "FastAPI Backend with CORS Support",
+        "Responsive Web Interface",
+      ],
+      metrics:
+        "Accurate text extraction with OCR fallback, efficient query processing",
+      github: "https://github.com/Yuvakunaal/ChatWithPDF-AI",
+      live: "https://github.com/Yuvakunaal/ChatWithPDF-AI",
+    },
+    {
+      id: 6,
+      title: "Hotel Booking Analytics",
+      challenge:
+        "Extract actionable insights from hotel booking data to optimize revenue",
+      status: "COMPLETED",
+      difficulty: "HARD",
+      technologies: [
+        "Python",
+        "SQL",
+        "Pandas",
+        "Matplotlib",
+        "Seaborn",
+        "Kaggle",
+      ],
+      description:
+        "Conducted a comprehensive analysis of 10,000+ hotel bookings to identify key trends in demand, cancellation patterns, and customer behavior to drive strategic decisions.",
+      features: [
+        "Demand & Seasonality Analysis",
+        "Cancellation Pattern Identification",
+        "Customer Segmentation",
+        "Data Visualization for Business Intelligence",
+      ],
+      metrics:
+        "Identified peak seasons (40% of annual revenue), suggested strategies increasing occupancy by 15%",
       github: "https://github.com/Yuvakunaal/Hotel-Booking-Analysis",
       live: "https://github.com/Yuvakunaal/Hotel-Booking-Analysis",
     },
     {
-      id: 3,
+      id: 7,
+      title: "AI Voice Desktop Assistant",
+      challenge:
+        "Develop a fast, on-device voice agent for cross-platform desktop control",
+      status: "COMPLETED",
+      difficulty: "EXTREME",
+      technologies: [
+        "Python",
+        "GenAI",
+        "SpeechRecognition",
+        "AppleScript",
+        "REST APIs",
+        "Fuzzy Logic",
+        "LLM (Mistral-TB)",
+      ],
+      description:
+        "A privacy-focused, on-device voice agent that indexes local files/apps and executes commands using fuzzy logic and LLM ranking, replacing multi-step GUI workflows.",
+      features: [
+        "On-Device Processing (Zero Cloud Storage)",
+        "Fuzzy Logic + LLM Ranking for Target Launch",
+        "Cross-Platform Support (macOS/Windows/Linux)",
+        "Google CSE & DuckDuckGo Integration for Queries",
+      ],
+      metrics:
+        "Launches correct target in <1s, 98% first-match accuracy, replaces 3-step GUI workflows",
+      github: "https://github.com/Yuvakunaal/AI-Voice-Desktop-Assistant",
+      live: "https://github.com/Yuvakunaal/AI-Voice-Desktop-Assistant",
+    },
+    {
+      id: 8,
       title: "YT-INSTA VIDEO DOWNLOADER",
-      challenge: "Create multi-platform video downloading solution",
+      challenge: "Create a multi-platform video downloading solution",
       status: "COMPLETED",
       difficulty: "HARD",
       technologies: ["Python", "Streamlit", "yt-dlp", "instaloader"],
       description:
         "User-friendly web application enabling seamless video downloads from YouTube and Instagram. Built with Python and Streamlit for optimal user experience.",
       features: [
-        "Multi-platform Support",
+        "Multi-platform Support (YouTube & Instagram)",
         "Streamlit Web Interface",
         "Download Optimization",
         "User-friendly Design",
       ],
-      metrics:
-        "50% faster downloads, 200+ active users, 15% retention increase",
+      metrics: "50% faster downloads, 200+ active users",
       github: "https://github.com/Yuvakunaal/YT-Insta-MP4-Download",
       live: "https://yt-insta-mp4.streamlit.app/",
     },
     {
-      id: 4,
-      title: "WEBSITE AWS EC2 DEPLOYMENT",
-      challenge: "Deploy static website on AWS cloud infrastructure",
+      id: 9,
+      title: "1-Click Certificate Generator",
+      challenge:
+        "Automate certificate generation from Google Sheets data with dynamic PDF creation",
       status: "COMPLETED",
-      difficulty: "HARD",
-      technologies: ["AWS EC2", "HTML", "CSS", "JavaScript", "Linux", "Apache"],
-      description:
-        "Successfully deployed a static website on Amazon Web Services EC2 instance, demonstrating cloud infrastructure management and deployment skills with proper security configurations.",
-      features: [
-        "AWS EC2 Configuration",
-        "Apache Web Server Setup",
-        "Security Group Management",
-        "Domain Configuration",
+      difficulty: "EXTREME",
+      technologies: [
+        "Make.com",
+        "Google Sheets API",
+        "Google Drive API",
+        "CraftMyPDF",
+        "HTTP Requests",
+        "Automation Workflows",
       ],
-      metrics: "100% uptime, secure cloud deployment, scalable infrastructure",
-      github: "https://github.com/Yuvakunaal/Website-AWS-EC2-Deployment",
-      live: "https://github.com/Yuvakunaal/Website-AWS-EC2-Deployment",
+      description:
+        "Built an automated certificate generation system that transforms Google Sheets data into personalized PDF certificates using dynamic placeholders, with automatic upload to Google Drive.",
+      features: [
+        "Dynamic Data Mapping from Google Sheets",
+        "Custom Certificate Template Support",
+        "Automatic PDF Generation with Placeholders",
+        "Google Drive Integration for Storage",
+        "Scalable Solution for Any Number of Recipients",
+        "No-Code/Low-Code Implementation",
+      ],
+      metrics:
+        "Generates 100+ certificates in minutes, eliminates manual work, 100% accuracy in data mapping",
+      github: "https://github.com/Yuvakunaal/1-Click-Certificates-Generator",
+      live: "https://github.com/Yuvakunaal/1-Click-Certificates-Generator",
+    },
+    {
+      id: 10,
+      title: "1-Click Attendance Notifier System",
+      challenge:
+        "Build an on-demand automated system to monitor student attendance and instantly send warning emails to all students falling below a threshold with a single click.",
+      status: "COMPLETED",
+      difficulty: "EXTREME",
+      technologies: [
+        "Make.com",
+        "Google Sheets API",
+        "SMTP Email API",
+        "Conditional Logic",
+        "Bulk Data Processing",
+        "On-Demand Automation",
+      ],
+      description:
+        "Engineered an automated monitoring system that evaluates every student in a Google Sheet, applies conditional logic to identify at-risk students (<75% attendance), and triggers personalized bulk email notifications instantly with a 1-click run.",
+      features: [
+        "1-Click Bulk Processing: Evaluates all rows and emails all at-risk students in seconds",
+        "On-Demand & Scheduled Execution: Run manually anytime or set to run automatically",
+        "Dynamic Threshold Checking (Configurable %, e.g., <75%)",
+        "Personalized Email Content with Individual Attendance Data",
+        "Guarantees no student below the threshold is missed",
+      ],
+      metrics:
+        "Processes 100+ student records in a single run, sends personalized emails in seconds, eliminates manual tracking and notification tasks.",
+      github: "https://github.com/Yuvakunaal/1-Click-Attendance-Notifier",
+      live: "https://github.com/Yuvakunaal/1-Click-Attendance-Notifier",
     },
   ];
 
@@ -273,24 +469,26 @@ const ProjectsSection = () => {
                   ACHIEVEMENT 1:
                 </span>
                 <br />
-                Developed 3+ web applications using Flask, improving deployment
-                efficiency by 20%
+                Automated HR workflows with UiPath bots to sync 100+ emails/day
+                to Google Sheets, achieving 70% efficiency gain.
               </div>
               <div className="bg-squid-black/30 p-4 rounded">
                 <span className="text-squid-red font-semibold">
                   ACHIEVEMENT 2:
                 </span>
                 <br />
-                Created responsive interfaces for 100+ users using HTML, CSS,
-                JavaScript, Bootstrap
+                Developed advanced SQL skills by writing complex queries using
+                multi-table JOINs, CTEs, and window functions to analyze
+                structured data.
               </div>
               <div className="bg-squid-black/30 p-4 rounded">
                 <span className="text-squid-red font-semibold">
                   ACHIEVEMENT 3:
                 </span>
                 <br />
-                Enhanced problem-solving skills by mastering Python Data
-                Structures and Algorithms
+                Mastered Python DSA for problem-solving and built responsive
+                front-end interfaces using HTML, CSS, JavaScript, and Bootstrap
+                for 100+ users.
               </div>
             </div>
           </div>
@@ -315,7 +513,7 @@ const ProjectsSection = () => {
               }
               className="btn-game cursor-hover"
             >
-              RECRUIT FOR DATA & DEVELOPMENT ROLES
+              RECRUIT FOR SKILLS
             </button>
           </div>
         </div>

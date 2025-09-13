@@ -23,7 +23,7 @@ const AboutSection = () => {
                 BOGGAVARAPU YUVA SATYA KUNAAL
               </h3>
               <p className="text-squid-cyan font-rajdhani">
-                AI & Data Science Student | Full-Stack Developer
+                AI & Data Science Specialist
               </p>
               <p className="text-sm text-gray-400 font-rajdhani mt-2">
                 Hyderabad, Telangana | +91 8897160549
@@ -38,8 +38,7 @@ const AboutSection = () => {
               <div className="flex justify-between border-b border-squid-red pb-2">
                 <span className="font-rajdhani font-semibold">SPECIALTY:</span>
                 <span className="text-squid-cyan">
-                  {" "}
-                  &nbsp;DATA ANALYSIS & FULL-STACK
+                  GENAI & DATA ENGINEERING
                 </span>
               </div>
               <div className="flex justify-between border-b border-squid-red pb-2">
@@ -48,7 +47,9 @@ const AboutSection = () => {
               </div>
               <div className="flex justify-between border-b border-squid-red pb-2">
                 <span className="font-rajdhani font-semibold">OBJECTIVE:</span>
-                <span className="text-squid-cyan">CONQUER DATA & CODE</span>
+                <span className="text-squid-cyan">
+                  INNOVATE WITH AI SOLUTIONS
+                </span>
               </div>
             </div>
           </div>
@@ -57,37 +58,41 @@ const AboutSection = () => {
           <div className="space-y-6">
             <div className="glass p-6 rounded-lg hover:glass-red transition-all duration-300 cursor-hover">
               <h4 className="text-xl font-orbitron font-bold text-squid-red mb-4">
-                THE DATA WARRIOR
+                THE GENAI INNOVATOR
               </h4>
               <p className="font-rajdhani text-gray-300 leading-relaxed">
-                From CBIT's AI & Data Science program, I've emerged as a skilled
-                combatant in both data analysis and full-stack development. My
-                journey through 10,000+ hotel booking records and 500+ user
-                platforms has forged me into a versatile developer.
+                Specializing in Generative AI and expert-level prompt
+                engineering with hands-on experience in building scalable
+                AI-powered solutions. Developed NL→SQL engines, AI coding
+                pattern detectors, and intelligent automation systems that
+                deliver 200-600ms response times with cutting-edge LLMs like
+                Mistral and Ollama.
               </p>
             </div>
 
             <div className="glass p-6 rounded-lg hover:glass-red transition-all duration-300 cursor-hover">
               <h4 className="text-xl font-orbitron font-bold text-squid-red mb-4">
-                THE TECHNICAL ARSENAL
+                THE AUTOMATION ENGINEER
               </h4>
               <p className="font-rajdhani text-gray-300 leading-relaxed">
-                Armed with Python mastery (5★ HackerRank), MERN stack expertise,
-                and SQL supremacy, I've conquered challenges from ByteXl
-                internships to competitive programming arenas. My weapons
-                include data visualization and scalable backend architectures.
+                Built UiPath automation systems that process 100+ emails daily
+                with 70% efficiency gains and AI-powered recruitment pipelines
+                that screen 50+ resumes daily, reducing hiring cycle time by
+                65%. Developed adaptive Selenium automation handling 12+ ERP
+                variants with 100% success on 500+ records.
               </p>
             </div>
 
             <div className="glass p-6 rounded-lg hover:glass-red transition-all duration-300 cursor-hover">
               <h4 className="text-xl font-orbitron font-bold text-squid-red mb-4">
-                THE MISSION
+                THE DATA STRATEGIST
               </h4>
               <p className="font-rajdhani text-gray-300 leading-relaxed">
-                Ready to dominate the data analysis and full-stack development
-                battlegrounds. My goal: transform raw data into actionable
-                insights and build scalable solutions that serve hundreds of
-                users while leading teams to victory.
+                Analyzed 10,000+ hotel bookings to identify revenue patterns and
+                optimize operations. Built intelligent ETL pipelines with 99%+
+                accuracy that save 8+ manual hours weekly. Passionate about
+                transforming raw data into actionable insights through robust
+                data engineering practices and intelligent systems.
               </p>
             </div>
           </div>
@@ -122,10 +127,10 @@ const AboutSection = () => {
             </div>
             <div className="text-center glass p-6 rounded-lg cursor-hover">
               <div className="text-3xl font-orbitron font-black text-squid-red mb-2">
-                ETL
+                5+
               </div>
               <div className="font-rajdhani text-sm text-gray-400">
-                DATA ANALYSIS
+                Automations
               </div>
             </div>
           </div>

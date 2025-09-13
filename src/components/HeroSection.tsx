@@ -54,13 +54,13 @@ const HeroSection = () => {
           style={{ animationDelay: "1.5s" }}
         >
           <p className="text-lg font-rajdhani text-gray-300 leading-relaxed">
-            I am{" "}
-            <span className="text-squid-red font-semibold">Yuva Kunaal</span>, a
-            final-year AI & Data Science student from CBIT with a 9.01 CGPA.
-            Armed with Python mastery, MERN stack expertise, and data analysis
-            skills, I'm ready to conquer the ultimate challenges in{" "}
+            I am <span className="text-squid-red font-semibold">Yuva Kunaal</span>,
+            a final-year AI & Data Science student from CBIT with a 9.07 CGPA.
+            Armed with expertise in Python, SQL, Generative AI, Prompt Engineering,
+            and scalable automation, I'm ready to conquer the ultimate
+            challenges in{" "}
             <span className="text-squid-cyan font-semibold">
-              Data Analysis and Full-Stack Development
+              AI-Powered Solutions, Data Engineering, and Intelligent Automation
             </span>
             .
           </p>

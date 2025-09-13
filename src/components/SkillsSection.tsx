@@ -10,39 +10,48 @@ const SkillsSection = () => {
         {
           name: "Python",
           level: 95,
-          description: "5★ HackerRank certified, DSA master",
+          description:
+            "5★ HackerRank certified, DSA master, 200+ LeetCode problems",
         },
         {
-          name: "Java",
-          level: 80,
-          description: "Object-oriented programming expertise",
+          name: "SQL",
+          level: 98,
+          description: "Advanced query optimization, multi-table JOINs, CTEs",
         },
-        { name: "SQL", level: 98, description: "Database query supremacy" },
+        {
+          name: "HTML/CSS",
+          level: 88,
+          description: "Responsive UI/UX design and implementation",
+        },
         {
           name: "JavaScript",
           level: 85,
-          description: "Full-stack web development",
+          description: "Full-stack web development with FastAPI/Flask",
         },
       ],
     },
     {
-      category: "FULL-STACK WEAPONS",
+      category: "AI & GENAI EXPERTISE",
       items: [
         {
-          name: "MERN Stack",
+          name: "LLMs",
           level: 90,
-          description: "MongoDB, Express, React, Node.js",
+          description: "OpenAI, Mistral, Deepseek, Llama, Qwen, Gemini",
         },
         {
-          name: "React Bits",
+          name: "RAG Systems",
           level: 85,
-          description: "React animated Inbuild components",
+          description: "Retrieval Augmented Generation implementation",
         },
-        { name: "HTML/CSS", level: 88, description: "Responsive UI/UX design" },
         {
-          name: "Bootstrap",
-          level: 75,
-          description: "Frontend framework mastery",
+          name: "Ollama",
+          level: 88,
+          description: "Local LLM deployment and optimization",
+        },
+        {
+          name: "Prompt Engineering",
+          level: 92,
+          description: "Expert-level schema-aware prompting techniques",
         },
       ],
     },
@@ -52,36 +61,75 @@ const SkillsSection = () => {
         {
           name: "Pandas",
           level: 90,
-          description: "Data manipulation and analysis",
-        },
-        { name: "NumPy", level: 85, description: "Numerical computing power" },
-        {
-          name: "Spark",
-          level: 85,
-          description: "Data Analysis - ETL",
+          description: "Data manipulation, cleaning, and ETL pipelines",
         },
         {
-          name: "Excel",
+          name: "NumPy",
           level: 85,
-          description: "Advanced data analysis tool",
+          description: "Numerical computing and data processing",
+        },
+        {
+          name: "Matplotlib",
+          level: 80,
+          description: "Data visualization and analytics reporting",
+        },
+        {
+          name: "ETL Pipelines",
+          level: 85,
+          description: "Building intelligent data extraction workflows",
         },
       ],
     },
     {
-      category: "DEVELOPMENT TOOLS",
+      category: "DEVELOPMENT & WORKFLOWS",
       items: [
         {
-          name: "Git/GitHub",
-          level: 85,
-          description: "Version control mastery",
+          name: "FastAPI/Flask",
+          level: 90,
+          description:
+            "Production-style API services with robust error handling",
         },
-        { name: "VS Code", level: 90, description: "IDE optimization expert" },
         {
-          name: "Microsoft Office",
+          name: "UiPath",
           level: 80,
-          description: "Professional productivity suite",
+          description: "Automation workflows and bot development",
         },
-        { name: "UNIX", level: 75, description: "Commands" },
+        {
+          name: "make",
+          level: 85,
+          description: "Web automation and data extraction",
+        },
+        {
+          name: "Git/GitHub",
+          level: 90,
+          description: "Version control and collaborative development",
+        },
+      ],
+    },
+    {
+      category: "DATABASES SURVIVAL",
+      items: [
+        {
+          name: "MySQL",
+          level: 90,
+          description:
+            "Relational database management using structured queries.",
+        },
+        {
+          name: "SQLite",
+          level: 85,
+          description: "Lightweight, file-based relational database solution.",
+        },
+        {
+          name: "Firebase",
+          level: 80,
+          description: "Realtime backend services for web and mobile apps.",
+        },
+        {
+          name: "Local JSON",
+          level: 85,
+          description: "Storing structured data locally in JSON format.",
+        },
       ],
     },
   ];
@@ -95,7 +143,8 @@ const SkillsSection = () => {
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-squid-red to-squid-pink mx-auto mb-6"></div>
           <p className="text-xl font-rajdhani text-squid-cyan">
-            Each skill is a weapon forged through countless battles with code
+            Each skill is a weapon forged through real-world AI and data
+            engineering projects
           </p>
         </div>
 
@@ -192,7 +241,7 @@ const SkillsSection = () => {
                 HACKERRANK MASTER
               </h4>
               <p className="text-sm font-rajdhani text-gray-300">
-                Python 5★ | Problem Solving 3★
+                Python 5★ | Problem Solving 4★
               </p>
             </div>
 
@@ -243,7 +292,7 @@ const SkillsSection = () => {
                 LEETCODE WARRIOR
               </h4>
               <p className="text-sm font-rajdhani text-gray-300">
-                200+ Problems Solved (Top 10%)
+                200+ Problems Solved (Top 18% - contest rating)
               </p>
             </div>
 
@@ -266,7 +315,7 @@ const SkillsSection = () => {
                 CODECHEF CHAMPION
               </h4>
               <p className="text-sm font-rajdhani text-gray-300">
-                3★ Rated Coder (Personal Highest)
+                2★ Rated Coder (Personal Highest)
               </p>
             </div>
           </div>

@@ -51,7 +51,8 @@ ${formData.name}`);
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-squid-red to-squid-pink mx-auto mb-6"></div>
           <p className="text-xl font-rajdhani text-squid-cyan">
-            Ready to recruit Yuva Kunaal for Data Analysis & Full-Stack roles?
+            Ready to recruit Yuva Kunaal for Data Analysis, Data Engineering &
+            AI, GenAI roles?
           </p>
         </div>
 
@@ -172,7 +173,6 @@ ${formData.name}`);
               </div>
             </div>
 
-            {/* Achievements */}
             <div className="glass p-6 rounded-lg">
               <h4 className="text-lg font-orbitron font-bold text-squid-cyan mb-4">
                 CERTIFICATIONS & ACHIEVEMENTS
@@ -183,20 +183,29 @@ ${formData.name}`);
                   HackerRank Software Engineer Intern Certification
                 </li>
                 <li className="flex items-center">
+                  <span className="text-squid-red mr-2">🤖</span>
+                  AI Foundation Certification (Hexart/NASSCOM)
+                </li>
+                <li className="flex items-center">
+                  <span className="text-squid-red mr-2">📊</span>
+                  IBM SkillsBuild Data Science Internship
+                </li>
+                <li className="flex items-center">
                   <span className="text-squid-red mr-2">🐍</span>
-                  NPTEL "Joy of Computing using Python" Certification
-                </li>
-                <li className="flex items-center">
-                  <span className="text-squid-red mr-2">👥</span>
-                  Led 20 volunteers for DIGITHON event
-                </li>
-                <li className="flex items-center">
-                  <span className="text-squid-red mr-2">🚀</span>
-                  Internal Smart India Hackathon Certificate
-                </li>
-                <li className="flex items-center">
-                  <span className="text-squid-red mr-2">📚</span>
                   Python Foundation Certification (Infosys)
+                </li>
+                <li className="flex items-center">
+                  <span className="text-squid-red mr-2">🧠</span>
+                  IIT Hyderabad Gen AI Workshop Participation
+                </li>
+                <li className="flex items-center">
+                  <span className="text-squid-red mr-2">🧪</span>
+                  CBIT GenAI, AgenticAI, Prompt Engineering, 3 days Workshop
+                  participation
+                </li>
+                <li className="flex items-center">
+                  <span className="text-squid-red mr-2">☁️</span>
+                  AI Associate Certification (Salesforce)
                 </li>
               </ul>
             </div>
@@ -219,12 +228,22 @@ ${formData.name}`);
                 </div>
                 <div className="bg-squid-red/20 p-3 rounded flex items-center justify-center h-20">
                   <div className="font-orbitron font-bold text-squid-red text-sm text-center">
-                    FULL-STACK DEV
+                    GENAI ENGINEER
                   </div>
                 </div>
                 <div className="bg-squid-red/20 p-3 rounded flex items-center justify-center h-20">
                   <div className="font-orbitron font-bold text-squid-red text-sm text-center">
-                    SOFTWARE ENGINEER
+                    AI ENGINEER
+                  </div>
+                </div>
+                <div className="bg-squid-red/20 p-3 rounded flex items-center justify-center h-20">
+                  <div className="font-orbitron font-bold text-squid-red text-sm text-center">
+                    AUTOMATION ENGINEER
+                  </div>
+                </div>
+                <div className="bg-squid-red/20 p-3 rounded flex items-center justify-center h-20">
+                  <div className="font-orbitron font-bold text-squid-red text-sm text-center">
+                    MAKE AUTOMATOR
                   </div>
                 </div>
               </div>
