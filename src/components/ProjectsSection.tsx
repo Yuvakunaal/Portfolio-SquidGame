@@ -501,9 +501,7 @@ const ProjectsSection = () => {
               READY FOR THE NEXT CHALLENGE?
             </h3>
             <p className="font-rajdhani text-gray-300 mb-6">
-              These victories represent my journey through data analysis and
-              full-stack development. I'm ready to bring my skills to your
-              organization's most challenging projects.
+              These victories represent my journey through data engineering, AI solutions, GenAI models, and data analysis. I'm ready to bring my skills to your organization's most challenging projects.
             </p>
             <button
               onClick={() =>
