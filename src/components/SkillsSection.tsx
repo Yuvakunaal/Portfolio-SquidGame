@@ -11,22 +11,23 @@ const SkillsSection = () => {
           name: "Python",
           level: 95,
           description:
-            "5★ HackerRank certified, DSA master, 200+ LeetCode problems",
+            "5★ HackerRank certified, DSA master, Backend development",
         },
         {
           name: "SQL",
           level: 98,
-          description: "Advanced query optimization, multi-table JOINs, CTEs",
+          description:
+            "Advanced query optimization, multi-table JOINs, CTEs, Window Functions",
         },
         {
-          name: "HTML/CSS",
+          name: "HTML",
           level: 88,
-          description: "Responsive UI/UX design and implementation",
+          description: "Structuring and presenting web content",
         },
         {
-          name: "JavaScript",
+          name: "CSS",
           level: 85,
-          description: "Full-stack web development with FastAPI/Flask",
+          description: "Beautifull and Responsive UI/UX design",
         },
       ],
     },
@@ -36,7 +37,7 @@ const SkillsSection = () => {
         {
           name: "LLMs",
           level: 90,
-          description: "OpenAI, Mistral, Deepseek, Llama, Qwen, Gemini",
+          description: "GPT, Mistral, Deepseek, Llama, Qwen, Gemini",
         },
         {
           name: "RAG Systems",
