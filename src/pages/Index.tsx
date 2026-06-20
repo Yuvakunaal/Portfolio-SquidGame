@@ -6,8 +6,6 @@ import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ContactSection from '../components/ContactSection';
-import CustomCursor from '../components/CustomCursor';
-
 const SECTIONS = ['home', 'about', 'skills', 'projects', 'contact'];
 
 const Index = () => {
@@ -48,7 +46,6 @@ const Index = () => {
 
   return (
     <>
-      <CustomCursor />
 
       {/* Scroll progress bar */}
       <div
