@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
-    port: 8080,
+    port: 5173,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(
     Boolean
@@ -17,5 +17,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: process.env.VITE_BASE_PATH || "/Portfolio-SquidGame",
+  base: process.env.VITE_BASE_PATH || "/",
 }));

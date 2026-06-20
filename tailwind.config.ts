@@ -117,24 +117,20 @@ export default {
 					}
 				},
 				'glitch': {
-					'0%': {
-						transform: 'translate(0)'
-					},
-					'20%': {
-						transform: 'translate(-2px, 2px)'
-					},
-					'40%': {
-						transform: 'translate(-2px, -2px)'
-					},
-					'60%': {
-						transform: 'translate(2px, 2px)'
-					},
-					'80%': {
-						transform: 'translate(2px, -2px)'
-					},
-					'100%': {
-						transform: 'translate(0)'
-					}
+					'0%': { transform: 'translate(0)' },
+					'20%': { transform: 'translate(-2px, 2px)' },
+					'40%': { transform: 'translate(-2px, -2px)' },
+					'60%': { transform: 'translate(2px, 2px)' },
+					'80%': { transform: 'translate(2px, -2px)' },
+					'100%': { transform: 'translate(0)' }
+				},
+				'marquee': {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(-50%)' }
+				},
+				'scan-line': {
+					'0%': { transform: 'translateY(-100%)' },
+					'100%': { transform: 'translateY(100vh)' }
 				}
 			},
 			animation: {
@@ -143,7 +139,8 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out',
 				'neon-pulse': 'neon-pulse 2s ease-in-out infinite',
 				'guard-float': 'guard-float 4s ease-in-out infinite',
-				'glitch': 'glitch 0.3s ease-in-out'
+				'glitch': 'glitch 0.3s ease-in-out',
+				'marquee': 'marquee 35s linear infinite',
 			},
 			backdropBlur: {
 				xs: '2px'

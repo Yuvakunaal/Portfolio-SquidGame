@@ -12,7 +12,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection }) => {
     { id: "about", label: "PLAYER" },
     { id: "skills", label: "ABILITIES" },
     { id: "projects", label: "CHALLENGES" },
-    { id: "contact", label: "ELIMINATION" },
+    { id: "contact", label: "RECRUIT" },
   ];
 
   const scrollToSection = (sectionId: string) => {

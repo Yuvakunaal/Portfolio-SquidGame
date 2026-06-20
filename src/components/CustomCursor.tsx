@@ -1,45 +1,66 @@
-
-import React, { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const CustomCursor = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const dotRef = useRef<HTMLDivElement>(null);
+  const ringRef = useRef<HTMLDivElement>(null);
   const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
-    const updateCursor = (e: MouseEvent) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+    let mouseX = -100, mouseY = -100;
+    let ringX = -100, ringY = -100;
+    let rafId: number;
+
+    const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
+
+    const onMouseMove = (e: MouseEvent) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      if (dotRef.current) {
+        dotRef.current.style.left = mouseX + 'px';
+        dotRef.current.style.top = mouseY + 'px';
+      }
     };
 
-    const handleMouseEnter = () => setIsHovering(true);
-    const handleMouseLeave = () => setIsHovering(false);
+    const animate = () => {
+      ringX = lerp(ringX, mouseX, 0.1);
+      ringY = lerp(ringY, mouseY, 0.1);
+      if (ringRef.current) {
+        ringRef.current.style.left = ringX + 'px';
+        ringRef.current.style.top = ringY + 'px';
+      }
+      rafId = requestAnimationFrame(animate);
+    };
 
-    // Add cursor tracking
-    document.addEventListener('mousemove', updateCursor);
-    
-    // Add hover detection for interactive elements
-    const interactiveElements = document.querySelectorAll('button, a, .cursor-hover');
-    interactiveElements.forEach(el => {
-      el.addEventListener('mouseenter', handleMouseEnter);
-      el.addEventListener('mouseleave', handleMouseLeave);
-    });
+    const onMouseOver = (e: MouseEvent) => {
+      if ((e.target as Element).closest('button, a, [role="button"], .cursor-hover, input, textarea')) {
+        setIsHovering(true);
+      }
+    };
+
+    const onMouseOut = (e: MouseEvent) => {
+      if ((e.target as Element).closest('button, a, [role="button"], .cursor-hover, input, textarea')) {
+        setIsHovering(false);
+      }
+    };
+
+    document.addEventListener('mousemove', onMouseMove, { passive: true });
+    document.addEventListener('mouseover', onMouseOver, { passive: true });
+    document.addEventListener('mouseout', onMouseOut, { passive: true });
+    rafId = requestAnimationFrame(animate);
 
     return () => {
-      document.removeEventListener('mousemove', updateCursor);
-      interactiveElements.forEach(el => {
-        el.removeEventListener('mouseenter', handleMouseEnter);
-        el.removeEventListener('mouseleave', handleMouseLeave);
-      });
+      document.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener('mouseover', onMouseOver);
+      document.removeEventListener('mouseout', onMouseOut);
+      cancelAnimationFrame(rafId);
     };
   }, []);
 
   return (
-    <div 
-      className={`custom-cursor ${isHovering ? 'hover' : ''}`}
-      style={{
-        left: position.x - 10,
-        top: position.y - 10,
-      }}
-    />
+    <>
+      <div ref={dotRef} className={`cursor-dot ${isHovering ? 'hovering' : ''}`} />
+      <div ref={ringRef} className={`cursor-ring ${isHovering ? 'hovering' : ''}`} />
+    </>
   );
 };
 
